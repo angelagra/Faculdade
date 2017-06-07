@@ -1,0 +1,3 @@
+Coloquei <header>, <section>, <footer>, <body>, <nav> ele da como indefinido.
+
+Em todos os arquivos deu erro que o charset não é um atributo.
