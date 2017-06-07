@@ -1,0 +1,88 @@
+<html>
+
+<head>
+	<title>My Simple First PlayList</title>
+	<meta charsert = "windows-1252".
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		h1{
+			font-size: 72px;
+			font-family: Verdana;
+			color:#8E6B23;
+		}
+
+		img{
+			
+			border-radius: 50px;
+			cursor: pointer;
+
+		}
+			p{
+				font-size: 72px;
+				font-family: Verdana;
+				color: #8E6B23;
+			}
+
+			a{
+				text-decoration: none;
+				font-size: 14px;
+				font-family: Verdana;
+				color: #8E6B23;
+			}
+
+	</style>
+
+	<script type="text/javascript">
+		function Tocador(musicas){
+
+			var musica = document.getElementById("playlist");
+
+			switch(musicas){
+				case "01":
+				musica.src = "1.mp3";
+				nomemusica.innerHTML= "Pachelbels";
+				break;
+
+				case "02":
+				musica.src = "2.mp3";
+				nomemusica.innerHTML = "2and symphony";
+				break;
+
+				case "03":
+				musica.src = "3.mp3";
+				nomemusica.innerHTML = "5 String Quartet";
+				break;
+
+				case "04":
+				musica.src = "4.mp3";
+				nomemusica.innerHTML = "Mozart";
+				break;
+			} 
+		}
+
+		
+
+	</script>
+</head>
+
+<body background="fundo.jpg">
+	<h1 align="center">My First Playlist</h1>
+	
+	<a href="#" onclick="if (playlist.hasAttribute('controls')){playlist.removeAttribute('controls')} else {playlist.setAttribute('controls', 'controls')}">Mostrar</a>
+
+
+	<table border="0" align = "center">
+
+		<tr>
+			<td><img src="bach.jpg" width="225" height="225" alt="capa1" onMouseOver = "javascript: Tocador('01');"/></td>
+			<td><img src="beethoven.jpg" width="225" height="225" alt="capa2" onMouseOver = "javascript: Tocador('02');"/></td>
+			<td><img src="Brahms.jpg" width="225" height="225" alt="capa3" onMouseOver = "javascript: Tocador('03');"/></td>
+			<td><img src="Mozart.jpg" width="225" height="225" alt="capa4" onMouseOver = "javascript: Tocador('04');"/></td>
+		</tr>
+	</table> 
+
+	<audio autoplay id="playlist"><source src=""></audio>
+	<marquee behavior="alternate"><p id="nomemusica"></p></marquee>
+</body>
+</html>

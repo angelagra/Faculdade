@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabuada</title>
+
+</head>
+<body>
+
+	<div align="center">
+		<h1>Tabuada</h1>
+		<form>
+
+			<input type="text" id="num1"> &nbsp &nbsp 
+			X &nbsp &nbsp
+			<input type="text" id="num2"> &nbsp &nbsp
+			= &nbsp &nbsp
+			<input type="text" name="result"><br><br>
+
+			<button type="button" onclick="tabuada()">Calcular</button>
+
+		</form>
+	</div>
+
+	<script type="text/javascript">
+
+		function tabuada(){
+
+			var nume1 = document.getElementBy("num1");
+			var nume2 = document.getElementBy("num2");
+			var resultado = document.getElementBy("result");
+
+			resultTa = nume1 * nume2;
+
+			quadrado = resultado * resultado;  
+		}
+		
+	</script>
+</body>
+</html>

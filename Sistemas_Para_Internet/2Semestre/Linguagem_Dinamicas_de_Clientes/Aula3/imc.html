@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculado IMC</title>
+<script language="javascript">
+
+		function Cal(){
+			
+			var peso = document.Calimc.txtPeso.value;
+			var altura = document.Calimc.txtAltura.value;
+			var IMC = (peso/(altura*altura));
+			
+			document.Calimc.txtIMC.value = IMC;
+			
+			alert(resultado);	
+			
+		}
+</script>
+</head>
+
+<body>
+
+	<form name =  "Calimc" >
+    
+    	<h3> Calculadora IMC</h3>
+        
+        <label> Peso em (Kg)</label> <br>
+      <input type = "text" name = "txtPeso"><br> <br>
+        
+        
+        <label> Altura (em cm)</label><br>
+        <input type = "text" name = "txtAltura"> <br><br>
+        
+        <input type = "button" value = "Calcular IMC" onClick = "Cal()">
+        <input type = "reset" value = "Limpar Valores"> <br> <br>
+        
+        <label> IMC </label><br>
+    	<input type = "text" name = "txtIMC">
+    </form>
+</body>
+</html>

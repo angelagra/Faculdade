@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<title>Tabuada</title>
+
+<script type="text/javascript">
+	function tabuada(){
+		var num = form1.numero.value;
+
+		for(operando = 1; operando < 11; operando++){
+			resultado = num * operando;
+			resp = num + " * " + operando + " = " + resultado + "\n";
+			document.write(resp+"<br>");
+		}	
+	}
+
+</script>
+
+</head>
+
+<body>
+
+	<h2 align = "center">Calcular Tabuada</h2>
+
+	<form name = "form1" align = "center">
+		Digite um número:
+		<input type = "text" name = "numero">
+		<input type = "button" value = "Calcular" onClick = "tabuada()">
+	</form>
+
+</body>
+
+
+</html>

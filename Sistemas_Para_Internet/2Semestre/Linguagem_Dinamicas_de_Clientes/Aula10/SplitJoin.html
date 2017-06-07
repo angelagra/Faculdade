@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Split e Join</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var frase = 'Sistemas para Internet a aula e de LDC nao de PI';
+		var palavras = frase.split(''); //A partir de uma String, basta definir um valor para separa-lo, uma virgula, espaço em branco.
+
+		for (i = 0; i < palavras.length; i++) {
+			alert('palvra ' +i+' = ' +palavras[i]);
+		}
+
+		alert('join = ' +palavras.join('...'));// serve para formar uma string a partir de um array concatenado com parametro passado. 
+	</script>
+
+</body>
+</html>

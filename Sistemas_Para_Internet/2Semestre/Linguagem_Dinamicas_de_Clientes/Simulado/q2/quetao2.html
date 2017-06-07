@@ -1,0 +1,51 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+
+		function exibir(imagens){
+
+			var imagem = document.getElementById("galeria");
+
+			switch(imagens){
+				case "01":
+				alert("Imagem 01");
+				break;
+
+				case "02":
+				alert("Imagem 02");
+				break;
+
+				case "03":
+				alert("Imagem 03");
+				break;
+
+				case "04":
+				alert("Imagem 04");
+				break;
+
+				case "05":
+				alert("Imagem 05");
+				break;
+			}
+		}
+		
+
+	</script>
+</head>
+<body>
+
+	<table width="672" align="center">
+	
+
+	<tr>
+		<td width="146"><img src="01.jpg" width="100" height="90" onmouseover="javascript: exibir('01');"></td>
+		<td width="155"><img src="02.jpg" width="100" height="90" onmouseover="javascript: exibir('02');"></td>
+		<td width="139"><img src="03.jpg" width="100" height="90" onmouseover="javascript: exibir('03');"></td>
+		<td width="130"><img src="04.jpg" width="100" height="90" onmouseover="javascript: exibir('04');"></td>
+		<td width="114"><img src="05.jpg" width="100" height="90" onmouseover="javascript: exibir('05');"></td>
+	</tr>
+		
+	</table>
+</body>
+</html>

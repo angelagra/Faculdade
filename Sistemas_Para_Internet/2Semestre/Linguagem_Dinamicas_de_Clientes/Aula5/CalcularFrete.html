@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<title>Frete</title>
+
+
+	<script>
+
+		function Calcular(){
+
+
+			var dist = document.getElementById('distancia').value;
+			var est = document.getElementById('estado').value;
+
+			var frete;
+
+			switch(est){
+
+				case "1":
+					 frete = dist*3;
+					alert("Seu frete é: " +frete);
+					break;
+
+				case "2":
+					 frete = dist*5;
+					alert("Seu Frete é: " +frete);
+					break;
+
+				case "3":
+					 frete = dist*7;
+					alert("Seu Frete é: " +frete);
+					break;
+
+				case "4":
+					 frete = dist*4;
+					alert("Seu Frete é: " +frete);
+					break;
+			}
+		}
+
+
+
+	</script>
+</head>
+
+<body>
+
+	<h1>Calcular Frete</h1>
+	<form action = "">
+
+
+		Distancia: <input type = "number" id = "distancia"> Km <br><br>
+
+		Estado
+		<select id =  "estado">
+			<option value = "1"> SP </option>
+			<option value = "2"> RJ </option>
+			<option value = "3"> MG </option>
+			<option value = "4"> PR </option>
+		</select>
+
+		<input type = "button" value = "OK" onClick = "Calcular()">
+
+
+	</form>
+
+
+</body>
+
+</html>

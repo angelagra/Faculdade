@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+
+	<script type="text/javascript">
+
+	function validar(){
+
+		var peso = document.frm.peso.value;
+		var altura = document.frm.altura.value;
+
+		if((peso == "") || (isNaN(peso))){
+			alert("Insira somente numeros...");
+		}
+
+		if((altura == "") || (isNaN(altura))){
+			alert("Insira Somente Numeros...");
+		}
+
+		
+	}
+	</script>
+</head>
+<body>
+
+	<form name = "frm">
+
+		Peso <input type = "txt" name = "peso">
+		Altura<input type = "txt" name = "altura">
+
+		<input type = "button" value = "OK" onClick = "validar()">
+	</form>
+</body>
+</html>

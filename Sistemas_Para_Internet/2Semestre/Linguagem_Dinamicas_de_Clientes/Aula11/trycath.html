@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Try Catch</title>
+</head>
+
+<body>
+<p>Insira um numere de 0 a 10</p>
+
+<input id = "demo" type="text">
+<button type="button" id="mybtn">Enviar</button>
+<p id="menssagem"></p>
+
+<script type="text/javascript">
+	document.querySelector('#mybtn') .onclick=function() {
+		var menssagem, x;
+
+		menssagem = document.getElementById("menssagem");
+		menssagem.innerHTML = "";
+
+		x = document.getElementById("demo").value;
+
+		try{
+			if(x == "") throw "Está Vazio";
+			if(isNaN(x)) throw "Não è numero";
+			if( x > 10) throw "Maior que o pedido";
+			if( x < 0) throw "Menor que o pedido";
+		}catch(err){
+			menssagem.innerHTML = "Valor Inserido " + err;
+		}
+	}
+	
+
+</script>
+
+
+</body>
+</html>

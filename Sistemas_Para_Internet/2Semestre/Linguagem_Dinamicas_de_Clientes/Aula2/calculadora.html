@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculadora</title>
+	<script language="javascript">
+	
+		function CalcularMais(){ 
+			var Valor1 = eval(document.frmCalcular.txtValor1.value); // esse eval deixa fazer o calcular de soma
+			var Valor2 = eval(document.frmCalcular.txtValor2.value);
+			var R = Valor1 + Valor2;
+			
+			document.frmCalcular.txtResultado.value = R;
+		}
+		
+		function CalcularMenos(){
+			var Valor1 = document.frmCalcular.txtValor1.value);
+			var Valor2 = document.frmCalcular.txtValor2.value);
+			var R = Valor1 - Valor2;
+			
+			document.frmCalcular.txtResultado.value = R;
+		}
+		
+		function CalcularMulti(){
+			var Valor1 = document.frmCalcular.txtValor1.value);
+			var Valor2 = document.frmCalcular.txtValor2.value);
+			var R = Valor1 * Valor2;
+			
+			document.frmCalcular.txtResultado.value = R;
+		}
+		
+		function CalcularDividir(){
+			var Valor1 = document.frmCalcular.txtValor1.value);
+			var Valor2 = document.frmCalcular.txtValor2.value);
+			var R = Valor1 / Valor2;
+			
+			document.frmCalcular.txtResultado.value = R;
+		}	
+	</script>
+</head>
+
+<body>
+
+	<form name = "frmCalcular" id = "frmCalcular">
+    	<h1>Eu Sei Calcular</h1>
+        
+        <label for = "valor1"> Valor 1: </label>
+        <input type = "number" name = "txtValor1" id = "valor1">
+        
+        <br>
+        <br>
+        
+        <label for = "valor2"> Valor 2: </label>
+        <input type = "number" name = "txtValor2" id = "valor2">
+        
+        <br>
+        <br>
+        
+        <label for = "resultado"> Resultado </label>
+        <input type = "number" name = "txtResultado" id = "resultado">
+        
+        <br>
+        <br>
+        
+        <input type = "button" value = "Soma" onClick="CalcularMais()">
+        <input type = "button" value = "Subtração" onClick="CalcularMenos()">
+        <input type = "button" value = "Multiplicação" onClick="CalcularMult()">
+        <input type = "button" value = "Divisão" onClick="CalcularDividir()">
+        
+        <br>
+        <br>
+        
+        <input type = "reset"  value = "Apagar">
+    	
+    </form>
+</body>
+</html>

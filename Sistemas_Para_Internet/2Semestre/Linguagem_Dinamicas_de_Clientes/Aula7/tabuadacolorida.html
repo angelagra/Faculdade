@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<title>tabuada</title>
+</head>
+
+	<body dgcolor=lightgreen>
+		<table border bgcolor=yellow>
+			<tr align=center height=40 bgcolor = darkseagreen>
+				<th widht=40>Operação</th>
+				<th widht=40>Resultado</th>
+			</tr>
+
+			<script type="text/javascript">
+
+				do{
+					num = window.prompt("Digite um numero de 1 a 9: ", "");
+				}while(isNaN(num));
+				lin = 0;
+
+				while(lin<10){
+					lin++;
+					document.write("<tr align=center height=40 bgcolor=burlywood>\n");
+					document.write("<td widht=40>", num, "x", lin, "</td>");
+					document.write("<td widht=40>", num * lin, "</td>");
+					document.write("\n </tr>\n");
+				}
+			</script>
+		</table>
+	</body>
+</html>

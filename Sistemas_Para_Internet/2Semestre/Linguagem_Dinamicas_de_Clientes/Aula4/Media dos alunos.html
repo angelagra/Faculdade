@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Média dos Alunos</title>
+
+<script language="javascript">
+
+	function Cal(){
+		
+		var Valor1 = eval(document.AlunoCal.txtNota1.value);
+		var Valor2 = eval(document.AlunoCal.txtNota2.value);
+		var Valor3 = eval(document.AlunoCal.txtNota3.value);
+		var Valor4 = eval(document.AlunoCal.txtNota4.value);
+		var Resultado = (Valor1 + Valor2 + Valor3 + Valor4)/4;
+		
+		
+		if((Valor1 == "") ||(isNaN(Valor1))){
+			alert("Insira um valor numero na Nota 1");
+			document.AlunoCal.txtNota1.focus();
+			return;	
+		}
+		
+		if((Valor2 == "") ||(isNaN(Valor2))){
+			alert("Insira um valor numero na Nota 2");
+			document.AlunoCal.txtNota2.focus();
+			return;	
+		}
+		
+		if((Valor3 == "") ||(isNaN(Valor3))){
+			alert("Insira um valor numero na Nota 3");
+			document.AlunoCal.txtNota3.focus();
+			return;	
+		}
+		
+		if((Valor4 == "") ||(isNaN(Valor4))){
+			alert("Insira um valor numero na Nota 4");
+			document.AlunoCal.txtNota4.focus();
+			return;	
+		}
+		
+		alert(Resultado);
+		
+		if(Resultado >= 6){
+			alert("Aluno Aprovado");
+		}
+			else{
+				alert("Aluno Reprovado");
+			}
+	}
+	
+	function mudaCor(ref, cor){
+		ref.style.backgroundColor = cor;
+	}
+	
+
+</script>
+</head>
+
+<body>
+
+	<form name = "AlunoCal" id = "AlunoCal">
+    	<h3>Médias dos Alunos</h3>
+        
+        <label for = "nota1"> Digite a Nota 1: </label>
+        <input type = "text" name = "txtNota1" id = "txtNota1" onFocus="mudaCor (this,'yellow')" onBlur="mudacor(this,'silver')">
+        
+        <br> <br>
+        
+        <label for = "nota2"> Digite a nota 2: </label>
+        <input type = "text" name = "txtNota2" id = "txtNota2" onFocus="mudaCor (this,'yellow')" onBlur="mudacor(this,'silver')">
+        
+        <br> <br>
+        
+        <label for = "nota3"> Digite a Nota 3: </label>
+        <input type = "text" name =  "txtNota3" id = "txtNota3" onFocus="mudaCor (this,'yellow')" onBlur="mudacor(this,'silver')">
+        
+        <br> <br>
+        
+        <label for = "nota4"> Digite a Nota 4: </label>
+        <input type="text" name="txtNota4" id = "txtNota4" onFocus="mudaCor (this,'yellow')" onBlur="mudacor(this,'silver')">
+        
+        <br> <br>
+        
+        <input type = "button" value = "Calcular" onClick = "Cal()">
+        <input type = "reset"  value = "Limpar">
+        <input type = "button" value = "Sair">
+        
+    </form>
+</body>
+</html>

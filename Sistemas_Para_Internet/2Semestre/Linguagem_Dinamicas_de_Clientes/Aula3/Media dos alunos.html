@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Média dos Alunos</title>
+
+<script language="javascript">
+
+	function Cal(){
+		
+		var Valor1 = eval(document.AlunoCal.txtNota1.value);
+		var Valor2 = eval(document.AlunoCal.txtNota2.value);
+		var Valor3 = eval(document.AlunoCal.txtNota3.value);
+		var Valor4 = eval(document.AlunoCal.txtNota4.value);
+		var Resultado = (Valor1 + Valor2 + Valor3 + Valor4)/4;
+		
+		alert(Resultado);
+	}
+
+</script>
+</head>
+
+<body>
+
+	<form name = "AlunoCal" id = "AlunoCal">
+    	<h3>Médias dos Alunos</h3>
+        
+        <label for = "nota1"> Digite a Nota 1: </label>
+        <input type = "text" name = "txtNota1">
+        
+        <br> <br>
+        
+        <label for = "nota2"> Digite a nota 2: </label>
+        <input type = "text" name = "txtNota2">
+        
+        <br> <br>
+        
+        <label for = "nota3"> Digite a Nota 3: </label>
+        <input type = "text" name =  "txtNota3">
+        
+        <br> <br>
+        
+        <label for = "nota4"> Digite a Nota 4: </label>
+        <input type="text" name="txtNota4">
+        
+        <br> <br>
+        
+        <input type = "button" value = "Calcular" onClick = "Cal()">
+        <input type = "reset"  value = "Limpar">
+        <input type = "button" value = "Sair">
+        
+    </form>
+</body>
+</html>

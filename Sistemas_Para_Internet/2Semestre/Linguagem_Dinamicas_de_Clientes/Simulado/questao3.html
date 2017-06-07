@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		function Capital(){
+
+			var esta= document.getElementById('estado').value;
+
+			switch(esta){
+
+				case '1':
+				alert("A Capital de São Paulo é São Paulo");
+				break;
+
+				case '2':
+				alert("A Capital de Minas Gerais é Belo Horizonte");
+				break
+
+				case '3':
+				alert("A Capital do Rio de Janeiro é Rio de Janeiro");
+				break;
+
+				case '4':
+				alert("A Capital do Paraná é Curitiba");
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	<form >
+
+		Estado
+		<select id = "estado">
+			<option value = '1' > São Paulo</option>
+			<option value = '2'>Minas Gerais</option>
+			<option value = '3'>Rio de Janeiro</option>
+			<option value = '4'>Paraná</option>
+		</select>
+
+		<input type = "button" value = "OK" onClick = "Capital()">
+
+
+	</form>
+
+</body>
+</html>
