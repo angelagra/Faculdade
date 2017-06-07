@@ -1,0 +1,13 @@
+Mais exercícios para revisão - Funções
+
+OBS: Não usar funções próprias do PHP nas questões 1 e 2.
+
+1 - Faça uma função que receba dois parâmetros do tipo 'string'. O parâmetro 1 contém a string onde deve ser procurada a string do parâmetro 2.
+
+A função deve retornar true ou false caso encontre ou não a string do parâmetro 2 'dentro' da string do parâmetro 1.
+
+Dica de protótipo: function nome_funcao(str1, str2)
+
+2 - Faça uma função que receba 3 parâmetros, sendo o primeiro por referência e os 2 seguintes por valor, de modo que o parâmetro recebido por referência receba o resultado do resto da divisão do parâmetro 2 pelo parâmetro 3.
+
+3 - Faça uma função que receba 2 parâmetros, um é o login e outro é a senha do usuário. Se o login for bem sucedido num banco de dados, a função deve inserir um registro numa tabela chamada LOG, cujos campos são: (login string, data_hora timestamp).

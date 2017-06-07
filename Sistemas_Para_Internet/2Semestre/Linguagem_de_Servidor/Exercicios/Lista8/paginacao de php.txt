@@ -1,0 +1,11 @@
+Paginação em PHP
+
+Criar um arquivo PHP que permita navegar nos dados de uma tabela com paginação.
+
+Exemplo:
+
+Exibir os dados da tabela Produto, de 10 em 10 registros. A página 1 mostra os registros de 1 a 10. A página 2 mostra os registros de 11 a 20 e assim sucessivamente.
+
+A tela deve exibir os números das páginas para permitir a navegação diretamente para uma página específica, como ir direto para a página 4, por exemplo. Essa funcionalidade é semelhante à navegação com paginação de boa parte dos sites na internet.
+
+Use como referência a página de busca do Google.

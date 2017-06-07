@@ -1,0 +1,32 @@
+- Ambiente de Desenvolvimento Web
+	- Servidor WEb: Apache, BadBlue, Internet Information 		Services, Nginx, Wamp, Xampp.
+
+	- Linguagem de Programação: Java, JavaScript, PHP, C#
+
+	- Servidor de Banco de Dados: MySql, PostgreSQL, 		Microsoft Access, SQL Server, Apache, Firebird. 
+
+-------------------------------------------------------------
+
+- IDE
+	- Ferramentas para PHP:Textmate, SublimeText, Atom, 	PHPStorm, Zend Studio, Netbeans, Aptana, Vi/Vim.
+
+	- Existe IDE no Senac: Sim.
+
+-------------------------------------------------------------
+
+- Frameworks
+
+	- Frameworks para PHP: FuelPHP, Slim, Phalcon, Cake
+	- Quais as caracteristicas: - FuelPHP:MVC, HMVC
+	- slimphp: http caching, criptografia, roteamento de 		URL. - Phalcon: segurança, caching, MVC. - Cake: XSS, 	CSRF, protecção.
+	- Vantagens: redução de custos, redução de time-to-	market, maximização de reuso.
+
+-------------------------------------------------------------
+
+- Maquinas Virtuais
+
+	- Existe maquinas virtuais prontas: Sim
+	- Existe ferramentas que instalam o ambiente 	completo: Sim, VirutalBox, VMWare.
+	
+
+	

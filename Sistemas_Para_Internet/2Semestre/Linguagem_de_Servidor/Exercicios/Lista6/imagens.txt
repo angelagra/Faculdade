@@ -1,0 +1,5 @@
+Imagens
+
+1 - Escreva código PHP que a cada execução (nova chamada da página - F5) exibe uma imagem do banco de dados aleatoriamente.
+
+2 - Escreva código PHP que a liste as descrições das imagens de um banco de dados, montando links que permitam ao usuário clicar em um link para escolher que imagem deve ser exibida.

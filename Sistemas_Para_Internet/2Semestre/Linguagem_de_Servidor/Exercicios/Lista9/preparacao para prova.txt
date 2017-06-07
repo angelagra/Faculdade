@@ -1,0 +1,48 @@
+Exercícios - Preparação para Segunda Avaliação.
+
+1 - O que é definição de função (protótipo)? O que significa passagem de parâmetros por valor e por referência em funções?
+
+2 - Descreva uma função e escreva o código de modo que a função faça uso de um parâmetro por referência.
+
+3 - Descreva uma função e escreva o código de modo que a função faça uso de um parâmetro por valor.
+
+4 - O que é escopo de variável?
+
+5 - Escreva uma função em PHP que utilize uma variável definida no escopo Global e outra variável no escopo local da função.
+
+6 - Para que serve o array $GLOBALS? Mostre um exemplo.
+
+7 - Escreva código PHP para listar os dados de um array recebido como resultado de uma consulta ao banco de dados contendo ID e Descricao, de modo que cada linha da lista tenha um parâmetro do tipo GET indicando qual o ID será referenciado.
+
+8 - Escreva código em PHP que permita fazer o seguinte select num banco de dados:
+
+select * from produtos
+
+OBS: inclua no código o trecho referente aos parâmetros de conexão ao BD.
+
+10 - Para que serve o array $_FILES? Comente todas as opções.
+
+11 - Escreva código PHP para receber um arquivo de IMAGEM de um formulário HTML. Escreva o formulário HTML utilizado.
+
+12 - Pesquise funções PHP para trabalhar com IMAGENS.
+
+13 - Faça código em PHP que receba um arquivo enviado num formulário e verifique se (i) o tamanho do arquivo é menor que 100 KB e (ii) se o tipo do arquivo é de imagem BMP ou JPG ou JPEG. Se os testes (i) e (ii) forem verdadeiros, exiba o nome original do arquivo, o tamanho do arquivo e o tipo do arquivo.
+
+14 - Escreva o código de uma função com o protótipo 
+
+nome_funcao($par1, $par2, $par3) de modo que o primeiro parâmetro seja uma conexão de banco de dados já aberta. O segundo parâmetro seja uma string para nome de usuário e o terceiro parâmetro seja uma string para senha.
+
+A função deve verificar no banco de dados se os valores de usuário e senha estão corretos.
+
+OBS: Defina o nome da função e o nome dos parâmetros de forma adequada.
+
+15 - Escreva o código de uma função com o protótipo 
+
+nome_funcao($par1, $par2)
+
+de modo que o primeiro parâmetro seja uma conexão de banco de dados já aberta. O segundo parâmetro seja um número inteiro com o identificador de uma tabela contendo um campo binário para armazenar uma imagem.
+
+A função deve escrever uma tag HTML (img src) que permita exibir a imagem correspondente.
+
+OBS: Defina o nome da função e o nome dos parâmetros de forma adequada.
+

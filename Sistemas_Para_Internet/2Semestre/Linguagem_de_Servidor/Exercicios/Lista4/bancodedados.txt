@@ -1,0 +1,14 @@
+Exercícios de PHP com banco de dados.
+
+1 - Faça um sistema de login que verifique se os dados de usuário e senha digitados num formulário estão corretos de acordo com uma tabela de usuários do Banco de Dados.
+
+2 - Dado um vetor com alguns valores, exiba as 2 primeiras colunas de cada uma das tabelas cujo nome é um dos valores contidos no vetor.
+
+3 - Dado um formulário com um campo do tipo text, faça o código PHP que mostra o conteúdo da tabela digitado pelo usuário no campo do formulário via POST..
+
+4 - Repita o exercício 2, mas limitando os dados a serem exibidos em 10 linhas para cada tabela contida no vetor.
+
+5 - Repita o exercício 3, mas usando uma variável recebida via GET.
+
+Pesquisa: sql injection! O que ocorre ao alterar a URL diretamente para uma tabela que o usuário não deveria ter acesso? Pesquise sobre SQL Injection para que os seus projetos não tenham essa vulnerabilidade!
+

@@ -1,0 +1,37 @@
+Esta ADO consiste em escrever funções em PHP para validação de:
+
+1) CPF: valida_cpf($cpf) deve retornar true ou false se o CPF passado no parâmetro for válido ou inválido, respectivamente.
+
+2) Tamanho de um texto: valida_comprimento_texto($texto, $tam) deve retornar true ou false. Se o comprimento do texto passado no parâmetro 1 é menor ou igual ao número inteiro passado no parâmetro 2, retorna true. Caso contrário, retorna false.
+
+3) CEP: valida_cep($cep, $opcao) deve ter 2 comportamentos:
+
+- se a opção passada no parâmetro 2 for 1, deve retornar o CEP passado no parâmetro 1 'formatado', isto é, retornar 5 dígitos numéricos seguido de um '-', seguido de mais 3 dígitos numéricos.
+
+- se a opção passada no parâmetro 2 for 0, deve retornar true ou false se o CEP passado no parâmetro for válido ou inválido, respectivamente. Nesta opção deve ser tratada a quantidade de dígitos e se são dígitos numéricos.
+
+4) Data: valida_data($data) deve retornar true ou false se a DATA passada no parâmetro for válida ou inválida. Deve fazer os cálculos pra saber se a data é válida 'manualmente', isto é, verificando se o valor de dia, mês e ano são válidos de acordo com o mês e o ano ser bissexto ou não.
+
+5) Faça funções para validar mais 2 padrões à sua escolha.
+
+Todas as funções podem estar no mesmo arquivo PHP:
+
+<?php
+
+
+function valida_cep(...) {
+
+...
+
+}
+
+function valida_cpf(...) {
+
+...
+
+}
+
+etc...
+
+?>
+

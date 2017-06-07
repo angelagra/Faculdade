@@ -1,0 +1,35 @@
+Modo 1:
+
+<?php
+
+$arquivo = "C:\\xampp\\htdocs\\teste\\download.jpg";
+
+$imagem = fopen($arquivo, "r");
+
+$conteudo = fread($imagem, filesize($arquivo));
+
+header("Content-Type: image/jpeg");
+
+echo $conteudo;
+?>
+
+Modo 2:
+
+<?php
+
+$arquivo = "C:\\xampp\\htdocs\\teste\\download.jpg";
+
+$imagem = fopen($arquivo, "r");
+
+$conteudo = fread($imagem, filesize($arquivo));?>
+
+<html>  <head>     <title></title>  </head>  <body>
+
+<?php
+
+$conteudo_base64 = base64_encode($conteudo);
+
+echo "<img src=\"data:image/jpeg;base64,".$conteudo_base64."\">";
+
+?>
+</body></html>

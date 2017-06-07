@@ -1,0 +1,16 @@
+Trabalhando com imagens
+
+
+1 - Faça um formulário que permita a um usuário enviar um arquivo de seu computador e um arquivo PHP que processe o arquivo enviado da seguinte forma:
+
+- se o arquivo for do tipo imagem JPEG, exiba na tela. 
+
+- se o arquivo for do tipo executável, informe que esse formato não é permitido.
+
+- se o arquivo for do tipo PDF, exiba ou permita o download (isso depende de como o browser trata!).
+
+- se o arquivo possuir mais de 1MB, informe que o limite é 1MB.
+
+2 - Faça o código PHP que lê uma tabela do banco de dados contendo um campo de imagem e exiba as imagens na tela.
+
+3 - Faça o código PHP que receba um arquivo via formulário e grave no banco de dados.

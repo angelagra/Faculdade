@@ -1,0 +1,11 @@
+Tabelas do PI,
+
+Escrever códigos em PHP que faça uma conexão com o BD e liste toda a lista de produtos do Banco de Dados do PI e permita escolher uma das perguntas para edição, isto é, permita alterar as informacões da pergunta escolhida.
+
+Regras/condições:
+
+1 - Todo arquivo que fizer manipulação de dados deve fazer a verificação de Sessão, para garantir que o usuário está logado e tem permissão.
+
+2 - Deve usar include para incluir os códigos que fazem conexão com o BD.
+
+3 - A lista dos produtos deve permitir a escolha de um produto para edição por meio de GET.

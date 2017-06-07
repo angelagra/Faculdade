@@ -1,0 +1,15 @@
+Segundo a Conjectura de Collatz, a seguinte operação em um número inteiro positivo arbitrário, maior que 1, executada repetidamente, sempre resultará em 1:
+
+- Se o número é par, divida-o por 2;
+
+- Se o número é ímpar, multiplique-o por 3 e some 1;
+
+Faça o código PHP que verifique essa propriedade para os números de 2 até 1000, colocando num array a quantidade de vezes em que foi necessário realizar a operação até chegar em 1. Faça o código de 2 formas: iterativamente e recursivamente.
+
+Exemplo:
+
+$arr[2] = 1, pois basta executar a operação 1 vez, pois como 2 é par, 2/2 = 1;
+
+$arr[3] = 7, pois 3 é impar => 3*3+1 = 10. 10 é par => 10/2 = 5. 5 é ímpar => 5*3+1 = 16. 16 é par => 16/2 = 8. 8 é par => 8/2 = 4. 4 é par => 4/2 = 2. 2 é par => 2/2 = 1;
+
+Esta atividade utiliza conhecimentos de função, array, laços de repetição, recursividade.
