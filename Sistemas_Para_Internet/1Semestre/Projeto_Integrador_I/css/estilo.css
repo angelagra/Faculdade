@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{ /*todos os elementos*/
+	box-sizing: border-box; /* caixa como um todo, pagina */
+}
+body{
+	background-color : #221B1B;
+}
+	
+h1{
+	
+	color:#19C8D7;
+	
+	width:300px; /*largura do titulo*/
+	border: 50px solid black; /* borda */  /*largura, o estilo, e a cor*/
+	padding: 30px;
+	margin: 40px;
+	
+	/*box-sizing: border-box; *//* caixa como um todo, pagina */
+	
+}
+
+p{
+	color: #BED41F;
+}
+
+#paragrafo2{
+	
+	font-weight:bold; 
+	  
+	width: 50%;
+	padding:50px;
+	/*box-sizing: border-box;*/ /* mede a pagina como um todo */
+}
+
+.paragrafoVerde{
+	background-color:#A7ECC0;
+	color: #0B0909;
+}
