@@ -1,0 +1,74 @@
+1 - Exiba os produtos ordenados a parti do mais caro
+
+	R: Select nomeProduto, precProduto
+	   from Produto
+	   order by precProduto desc
+		
+
+2 - Exiba os produtos que não tem a letra "A" no seu nome
+
+	R: select nomeProduto
+	   from Produto
+           where nomeProduto not like '%A%'
+
+3 - Conte quantos produtos custam mais que 50,00
+
+	R: select nomeProduto, precProduto 
+	   from  Produto 
+	   where precProduto > 50
+
+4 - Exiba os produtos entre 30,00 e 50,00
+	
+	R: select nomeProduto, precProduto
+	   from Produto
+	   where precProduto > 30 and precProduto < 50
+
+			OU
+
+   	   select nomeProduto, precProduto
+	   from Produto
+	   where precProduto between 30 and 50
+
+5 - Quantos dias se passaram desde seu nascimento?
+
+	R: select datediff(day,'1994-11-01','2017-05-19')
+	
+6 - Qual o menor e o maior desconto oferecido?
+
+	R: select min(descontoPromocao) as 'descontoMinimo', max(descontoPromocao) as 'descontoMaximo'
+	   from Produto
+
+7 - Quantos produtor são da categoria 1?
+
+	R: select count(idCategoria)
+	   from Produto
+           where idCategoria = 1
+
+8 - Considerado o desconto, qual o preço medio dos produtos 
+
+	R: select AVG(precProduto) + AVG(descontoPromocao)
+	   from Produto
+
+8a - É só da categoria 2?
+
+	R: select AVG(precProduto) + AVG(descontoPromocao)
+	   from Produto
+	   where idCategoria = 2
+
+9 - Insira duas categorias sem descrição
+
+	R: insert into Categoria (nomeCategoria)
+	   values ('Bonecos Espaciais')
+
+10 - Altere 1 categoria, colocando descrição
+
+	R: update Categoria set descCategoria = 'bonecosLindos' where idCategoria = '52'
+
+11 - Exclua uma das categorias incluidas
+
+	R: delete from Categoria 
+	   where idCategoria = '52'
+
+
+
+

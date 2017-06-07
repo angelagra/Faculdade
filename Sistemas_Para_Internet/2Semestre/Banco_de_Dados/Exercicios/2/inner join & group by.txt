@@ -1,0 +1,18 @@
+
+
+(no Banco Pubs)
+1 - Quantos autores moram em cada estado? Exiba uma lista que contem a sigla do estado em uma coluna e a quantidade de autores na outra?
+
+2 - Exiba o preço do livro mais barato de cada editora(nome da editora e preço ) 
+
+3 - Utilizando agora as  tabelas Employee(Empregado) e Jobs (trabalhos), exiba uma relação de todos os empregados e suas profissões, ordenados pela data de contratação.
+
+4 - Exiba agora uma relação com todos os jobs e ao lado os funcionarios associados a ele, caso existam.
+
+
+(no banco Piratas)
+5 - Exiba uma relação da com todos os jobs, e ao lado os funcionários associados a ele, caso exitam.
+
+5b - Exiba também o vilarejo de origem deste pirata
+
+6 - Exiba a quantidade de piratas que nasceu em cada vilarejo ordenado a partir do vilarejo com mais piratas.
