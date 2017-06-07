@@ -1,0 +1,43 @@
+
+PROTOCOLO DE ENLACE DO PPP
+
+O PPP (Point-to-Point Protocol) é um protocolo para transmissão de pacotes através de conexões seriais ponto-a-ponto, suportando linhas síncronas e assíncronas. A conexão entre os pontos deve operar de forma full-duplex sendo que os pacotes serão entregues em ordem. Normalmente esse protocolo tem sido usado para a transmissão de pacotes IP na Internet em substituição ao SLIP.
+
+EXEMPLO:
+Pela Linha telefonica, dois computadores, no máximo podem comunicar por modem, assim como não é possivel ligar simultaneamente para duas pessoas pela mesma linha telefonica. 
+
+DESVANTAGENS:
+	-Detecção ou Correção de Erros: não opera com detecção ou correção de erros e, portanto, cabe às camadas superiores detectar e recuperar dados perdidos. Ou seja, linhas telefônicas ruidosas afetarão pacotes em trânsito. Se a linha for muito lenta a transmissão de pacotes será cara e demorada.
+
+	-Aceita apenas o IP: é uma séria restrição devido ao crescimento da Internet pois diversas redes que fazem parte dessa estrutura não utilizam o IP como protocolo original (p.e.: as LANs da Novell).
+
+	-Endereçamento: não permite a alocação dinâmica de endereços durante a configuração. Com a atual insuficiência de endereços IP, essa limitação é um grande problema já que é impossível fornecer a cada usuário doméstico da Internet um endereço IP exclusivo.
+
+	-Autenticação: não fornece qualquer forma de autenticação. Dessa forma, nenhuma das partes sabe com quem está realmente se comunicando. Isso é pouco expressivo em linhas privadas, mas em linhas de acesso comutado é um problema significativo.
+
+	-Não é padrão para Internet: dessa forma, existem várias versões diferentes e incompatíveis o que dificulta a interconexão.
+
+	-Não faz compressão: as linhas discadas são, geralmente, muito lentas e a compressão de pacotes traria uma melhoria na transmissão da informação.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FRAME RELAY
+
+Envia informações em pacotes, também conhecido como frames, através da rede. Cada frame contém todas as informações necessárias para encaminha-lo para o destino certo.
+
+Desse modo, cada ponto pode se comunicar com muitos destinos diferentes usando uma única linha de acesso á rede.E ao invés de atribuir uma largura de banda fixa, o serviço Frame Relay oferece CIR, que é uma garantia de que os dados terão uma determinada largura de banda garantida se a transmissão exigir.Dependendo dos parâmetros, os dados podem até exceder essa largura de banda garantida. 
+
+VANTAGENS:
+
+- Redução da quantidade de processamento necessária, tem maior desenpenho e tempo de resposta. 
+
+- O Frame Relay é independente de protocolo, pode processar tráfego a partir de protocolos como IP, IPX e SNA. 
+
+DESVANTAGENS:
+
+- Impossibilidade de se fazer um controle de fluxo de erro nó a nó(vale ressaltar que esta funcionalidade pode ser implementada em um nível mais alto). Além disso, a falta de confiabilidade é minimizada pelo aumento da confiabilidade de transmissão e roteamento.
+
+ROTEADORES DE FRAME
+
+Os roteadores de Frame traduzem os protocolos de comunicações de dados existentes, para transmiti-los na rede Frame Relay, depois roteiam os dados através da rede para outro roteador de frames ou outro dispositivo compativel.
