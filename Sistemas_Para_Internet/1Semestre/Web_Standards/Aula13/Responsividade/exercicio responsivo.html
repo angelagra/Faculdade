@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Responsividade</title>
+	<meta charset = "utf-8">
+
+	<style type="text/css">
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-shadow: border-box;
+	}
+
+		div.um{
+					
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid black;
+				background-color: #ccc;
+			}
+
+			div.dois{
+				margin:10px;
+				padding: 10px;
+				border: 1px solid blue;
+				background-color: #FFAA00;
+			}
+
+			div.tres{
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid yellow;
+				background-color: #AA00FF;
+			}
+
+
+
+		@media screen and (max-width: 769px) and (max-width: 991){
+
+			div.um {
+				background-color: yellow;
+				width: 90%;
+				height: 100px;
+			}
+
+			div.dois{
+				width: 40%;
+				height: 100px;
+				float: left;
+			}
+
+			div.tres{
+				width: 45%;
+				height: 100px;
+				float: left;
+			}
+		}
+
+		@media screen and (min-width: 992px){
+
+			div{
+				width: 30%;
+				height: 200px;
+				float: left;
+			}
+
+		}
+
+	</style>
+</head>
+
+
+<body>
+
+
+	<div class = "um">
+		<h1>Primeiro</h1>
+	</div>
+
+	<div class= "dois">
+		<h1>Segundo</h1>
+	</div>
+
+	<div class = "tres">
+		<h1>Terceiro</h1>
+	</div>
+
+</body>
+</html>
