@@ -1,0 +1,6 @@
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\CalculoDeAreaPerimetro\bin\Debug\CalculoDeAreaPerimetro.exe.config
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\CalculoDeAreaPerimetro\bin\Debug\CalculoDeAreaPerimetro.exe
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\CalculoDeAreaPerimetro\bin\Debug\CalculoDeAreaPerimetro.pdb
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\CalculoDeAreaPerimetro\obj\Debug\CalculoDeAreaPerimetro.csprojResolveAssemblyReference.cache
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\CalculoDeAreaPerimetro\obj\Debug\CalculoDeAreaPerimetro.exe
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\CalculoDeAreaPerimetro\obj\Debug\CalculoDeAreaPerimetro.pdb
