@@ -1,0 +1,6 @@
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula4\Aula4\bin\Debug\Aula4.exe.config
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula4\Aula4\bin\Debug\Aula4.exe
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula4\Aula4\bin\Debug\Aula4.pdb
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula4\Aula4\obj\Debug\Aula4.csprojResolveAssemblyReference.cache
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula4\Aula4\obj\Debug\Aula4.exe
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula4\Aula4\obj\Debug\Aula4.pdb
