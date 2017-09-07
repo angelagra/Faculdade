@@ -1,0 +1,6 @@
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Exercicio_Temperatura\bin\Debug\Exercicio_Temperatura.exe.config
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Exercicio_Temperatura\bin\Debug\Exercicio_Temperatura.exe
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Exercicio_Temperatura\bin\Debug\Exercicio_Temperatura.pdb
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Exercicio_Temperatura\obj\Debug\Exercicio_Temperatura.csprojResolveAssemblyReference.cache
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Exercicio_Temperatura\obj\Debug\Exercicio_Temperatura.exe
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Exercicio_Temperatura\obj\Debug\Exercicio_Temperatura.pdb

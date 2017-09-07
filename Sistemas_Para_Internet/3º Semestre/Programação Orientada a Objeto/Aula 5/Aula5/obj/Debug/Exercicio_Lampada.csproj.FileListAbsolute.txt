@@ -1,0 +1,3 @@
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Aula5\bin\Debug\Aula5.exe.config
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Aula5\obj\Debug\Aula5.exe
+C:\Users\angela.gfpedra1\Documents\3º Semestre\Programação Orientada a Objeto\Aula 5\Aula5\obj\Debug\Aula5.pdb
