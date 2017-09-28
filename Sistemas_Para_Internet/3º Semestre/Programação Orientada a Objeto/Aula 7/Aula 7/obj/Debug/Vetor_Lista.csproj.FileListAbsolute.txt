@@ -1,0 +1,5 @@
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula 7\Aula 7\obj\Debug\Vetor_Lista.csprojResolveAssemblyReference.cache
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula 7\Aula 7\obj\Debug\Aula 7.exe
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula 7\Aula 7\obj\Debug\Aula 7.pdb
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula 7\Aula 7\bin\Debug\Aula 7.exe.config
+c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula 7\Aula 7\bin\Debug\Aula 7.exe
