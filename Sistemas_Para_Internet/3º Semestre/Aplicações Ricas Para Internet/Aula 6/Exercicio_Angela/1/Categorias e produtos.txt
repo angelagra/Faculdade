@@ -1,0 +1,15 @@
+﻿Fitness:
+ - Peso 10Kg
+ - Banco de supino
+ - Bicicleta ergométrica
+ - Esteira
+Natação:
+ - Óculos
+ - Touca
+ - Sunga
+ - Boia
+Ciclismo:
+ - Mountain-bike
+ - Capacete
+ - Selim
+ - Cadeado para bicicleta

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 1</title>
+</head>
+<body>
+
+	<select onchange = "clique(this)">	
+		<option></option>	
+		<option value="fitness">Fitness</option>
+		<option value="natacao">Natação</option>
+		<option value="ciclismo">Ciclismo</option>
+	</select>
+	
+	<div id="resposta"></div>
+
+	<script type="text/javascript">
+
+		function clique(elem) {
+
+	        var xmlhttp = new XMLHttpRequest();
+	        
+	        xmlhttp.onreadystatechange = function() {
+	            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	                document.getElementById("resposta").innerHTML = xmlhttp.responseText;
+	            }
+	        }
+	        
+	        if(elem.value == "fitness"){
+		        xmlhttp.open("GET", "fitnes.html", true);
+		        xmlhttp.send();
+	        }
+
+	        if(elem.value == "natacao"){
+		        xmlhttp.open("GET", "natacao.html", true);
+		        xmlhttp.send();
+	        }
+
+	        if(elem.value == "ciclismo"){
+		        xmlhttp.open("GET", "ciclismo.html", true);
+		        xmlhttp.send();
+	        }
+    	}
+		
+
+	</script>
+</body>
+</html>
