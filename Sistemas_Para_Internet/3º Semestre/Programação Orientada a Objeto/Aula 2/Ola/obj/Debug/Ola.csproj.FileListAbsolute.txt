@@ -1,6 +1,0 @@
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Ola\bin\Debug\Ola.exe.config
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Ola\bin\Debug\Ola.exe
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Ola\bin\Debug\Ola.pdb
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Ola\obj\Debug\Ola.exe
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Ola\obj\Debug\Ola.pdb
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Ola\obj\Debug\Ola.csprojResolveAssemblyReference.cache

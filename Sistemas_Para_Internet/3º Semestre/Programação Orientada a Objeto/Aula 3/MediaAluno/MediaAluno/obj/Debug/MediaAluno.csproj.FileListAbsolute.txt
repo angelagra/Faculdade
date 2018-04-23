@@ -1,6 +1,0 @@
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\MediaAluno\MediaAluno\bin\Debug\MediaAluno.exe.config
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\MediaAluno\MediaAluno\obj\Debug\MediaAluno.csprojResolveAssemblyReference.cache
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\MediaAluno\MediaAluno\bin\Debug\MediaAluno.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\MediaAluno\MediaAluno\bin\Debug\MediaAluno.pdb
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\MediaAluno\MediaAluno\obj\Debug\MediaAluno.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\MediaAluno\MediaAluno\obj\Debug\MediaAluno.pdb

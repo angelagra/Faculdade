@@ -1,6 +1,0 @@
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula5\Aula5\bin\Debug\Aula5.exe.config
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula5\Aula5\bin\Debug\Aula5.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula5\Aula5\bin\Debug\Aula5.pdb
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula5\Aula5\obj\Debug\Aula5.csprojResolveAssemblyReference.cache
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula5\Aula5\obj\Debug\Aula5.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula5\Aula5\obj\Debug\Aula5.pdb

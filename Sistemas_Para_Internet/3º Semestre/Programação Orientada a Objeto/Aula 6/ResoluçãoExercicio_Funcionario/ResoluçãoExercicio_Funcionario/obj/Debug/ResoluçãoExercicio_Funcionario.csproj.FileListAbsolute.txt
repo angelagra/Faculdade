@@ -1,6 +1,0 @@
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ResoluçãoExercicio_Funcionario\ResoluçãoExercicio_Funcionario\bin\Debug\ResoluçãoExercicio_Funcionario.exe.config
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ResoluçãoExercicio_Funcionario\ResoluçãoExercicio_Funcionario\bin\Debug\ResoluçãoExercicio_Funcionario.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ResoluçãoExercicio_Funcionario\ResoluçãoExercicio_Funcionario\bin\Debug\ResoluçãoExercicio_Funcionario.pdb
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ResoluçãoExercicio_Funcionario\ResoluçãoExercicio_Funcionario\obj\Debug\ResoluçãoExercicio_Funcionario.csprojResolveAssemblyReference.cache
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ResoluçãoExercicio_Funcionario\ResoluçãoExercicio_Funcionario\obj\Debug\ResoluçãoExercicio_Funcionario.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ResoluçãoExercicio_Funcionario\ResoluçãoExercicio_Funcionario\obj\Debug\ResoluçãoExercicio_Funcionario.pdb

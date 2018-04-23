@@ -1,5 +1,0 @@
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Exercicio 2\bin\Debug\Exercicio 2.exe.config
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Exercicio 2\bin\Debug\Exercicio 2.exe
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Exercicio 2\bin\Debug\Exercicio 2.pdb
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Exercicio 2\obj\Debug\Exercicio 2.exe
-c:\Users\angela.gfpedra1\documents\visual studio 2015\Projects\Aula2\Exercicio 2\obj\Debug\Exercicio 2.pdb

@@ -1,6 +1,0 @@
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\ConverterTemperatura\bin\Debug\ConverterTemperatura.exe.config
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\ConverterTemperatura\bin\Debug\ConverterTemperatura.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\ConverterTemperatura\bin\Debug\ConverterTemperatura.pdb
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\ConverterTemperatura\obj\Debug\ConverterTemperatura.csprojResolveAssemblyReference.cache
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\ConverterTemperatura\obj\Debug\ConverterTemperatura.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\ConverterTemperatura\ConverterTemperatura\obj\Debug\ConverterTemperatura.pdb

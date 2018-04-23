@@ -1,6 +1,0 @@
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Exercicio_Carrinho\Exercicio_Carrinho\bin\Debug\Exercicio_Carrinho.exe.config
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Exercicio_Carrinho\Exercicio_Carrinho\bin\Debug\Exercicio_Carrinho.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Exercicio_Carrinho\Exercicio_Carrinho\bin\Debug\Exercicio_Carrinho.pdb
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Exercicio_Carrinho\Exercicio_Carrinho\obj\Debug\Exercicio_Carrinho.csprojResolveAssemblyReference.cache
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Exercicio_Carrinho\Exercicio_Carrinho\obj\Debug\Exercicio_Carrinho.exe
-c:\users\angela.gfpedra1\documents\visual studio 2015\Projects\Exercicio_Carrinho\Exercicio_Carrinho\obj\Debug\Exercicio_Carrinho.pdb
