@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico</title>
+    <script>
+        var vezes = 0;
+        function clique() {
+            vezes++;
+            location.hash = vezes;
+        }
+        window.onhashchange = function() {
+            var hash = location.hash;
+            if (hash.length > 0) {
+                hash = hash.replace("#", "");
+                vezes = parseInt(hash);
+                mensagem.innerHTML = vezes + " clique(s)";
+            } else {
+                mensagem.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="clique()">Clique-me!</button>
+    <p id="mensagem"></p>
+</body>
+</html>
+

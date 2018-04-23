@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>WebStorage</title>
+    
+    <style>
+        * {
+            font-family: sans-serif, Verdana;
+        }
+        
+        a {
+            font-family: sans-serif, Verdana;
+            color: #4682B4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        h4 {
+            background-color: #4682B4;
+            color: #fff;
+            padding: 8px;
+            margin: 0px;
+        }
+        
+        #divTarefas {
+            width: 300px;
+            border: solid 1px #C0C0C0;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <a href="#" onclick="carregaLista()">Tarefas</a><br/><br/>
+    
+    <div id="divTarefas" style="display:none;">
+        <input type="button" onclick="execCommand('indent',false,'');" value="->">
+        <input type="button" onclick="execCommand('outdent',false,'');" value="<-">
+        <input type="button" onclick="execCommand('bold',false,'');" value="N">
+        <input type="button" onclick="execCommand('italic',false,'');" value="I">
+        <input type="button" onclick="execCommand('underline',false,'');" value="S">
+        
+        <h4>Lista de Tarefas</h4>
+        <ul id="tarefas" contenteditable="true" >
+            
+        </ul>
+    </div>
+	
+	<script>
+        var ul = document.getElementById ("tarefas");
+        ul.onblur = perdeFoco; //ocorre quando um objeto perde o foco
+        ul.onkeyup = teclaEnter; //ocorre quando o usuário libera uma tecla do teclado
+
+		//grava o conteudo do elemento passado por parametro no localstorage
+        function gravaLista(lista) {
+			var conteudo = lista.innerHTML;
+            var lista = document.getElementById("tarefas");
+            window.localStorage.setItem("lista",conteudo);
+
+           //SALVAR LISTA NO LOCALSTORAGE AQUI
+        }
+        
+		//Se teclar enter na lista, chame a função gravaLista para gravar o conteudo do elemento
+        function teclaEnter(event) {
+            if(event.which == 13) {
+                gravaLista(event.target);
+            }
+        }
+        
+		//quando perder o foco da lista, chame a função gravaLista para gravar o conteudo do elemento
+        function perdeFoco(event) {        
+            gravaLista(event.target);
+        }
+        
+		//quando clicar no botão TAREFAS, carregue os dados do localstorage
+        function carregaLista() {
+            //OBTER DADOS DO LOCALSTORAGE.
+            var divTarefas = document.getElementById("divTarefas");
+            divTarefas.style.display = "block";
+			
+            var lista = document.getElementById("tarefas");
+            var info = window.localStorage.getItem("lista");// pega as informações do localStorage
+
+            //SE FOR DIFERENTE DE NULL, INJETAR CONTEUDO NO INNERHTML DO ELEMENTO UL DE ID="TAREFAS"
+            if(info != null){
+                
+                lista.innerHTML = info;
+            }
+        }
+    </script>
+</body>
+</html>

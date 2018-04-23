@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Edição</title>
+
+	<style type="text/css">
+		div{
+			border:1px solid black;
+			width: 700px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+
+	<input type="button" onclick="execCommand('bold',false,'');" value="B">
+	<input type="button" onclick="execCommand('italic',false,'');" value="I">
+	<input type="button" onclick="execCommand('underline', false, '');" value="U"> 
+	<input type="button" onclick="execCommand('justifyFull',false,'');" value="Justificado">
+	<input type="button" onclick="execCommand('fontSize',false,'7');" value="Aumentar">
+	<input type="button" onclick="execCommand('fontName',false,'Arial');" value="Arial">
+	<input type="button" onclick="execCommand('indent',false,'');" value="->">
+	<input type="button" onclick="execCommand('outdent',false,'');" value="<-">
+	<input type="button" onclick="execCommand('formatblock',false,'<h4>');" value="<h4>">
+	<input type="button" onclick="execCommand('foreColor',false,'#ff0000');" value="vermelho">
+
+	<input type="text" pattern="[A-Za-z] {3}">
+
+	<fi
+	
+
+		
+		<p contenteditable="true">Ola</p>
+		<p contenteditable="true">Deus</p>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico</title>
+    <script>
+        var vezes = 0;
+        var estado = {cliques: 0};
+        window.history.replaceState(estado, "", "#0");
+        
+        function clique() {
+            vezes++;
+            mensagem.innerHTML = vezes + " clique(s)";
+            var estado = {cliques: vezes};
+            window.history.pushState(estado, "", "#"+vezes);
+        }
+        window.onpopstate = function(event) {
+            var estado = event.state;
+            vezes = estado.cliques;
+            if (vezes == 0) {
+                mensagem.innerHTML = "";
+            } else {
+                mensagem.innerHTML = vezes + " clique(s)";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="clique()">Clique-me!</button>
+    <p id="mensagem"></p>
+</body>
+</html>
+

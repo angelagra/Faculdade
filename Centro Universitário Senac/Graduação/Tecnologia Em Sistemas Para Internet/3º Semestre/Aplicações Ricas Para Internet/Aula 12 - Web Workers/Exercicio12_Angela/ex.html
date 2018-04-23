@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico</title>
+    <script>
+
+    	function executarWorker() {
+	    	var mensagem = document.getElementById("mensagem");
+            var numero = document.getElementById("numero").value;
+
+	        var primo = new Worker("primos.js");
+	        primo.onmessage = function (event) {
+	        	mensagem.innerHTML = mensagem.innerHTML + " " + event.data;
+	        }
+
+           
+	       mensagem.innerHTML = " ";
+	       primo.postMessage(numero);
+    	}
+
+
+        function pararWorker() {
+            primo.terminate();
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Iniciar" onclick="executarWorker();">
+    <input type="button" value="Parar" onclick="pararWorker();"> <br/><br>
+    <input type="number" id="numero"/><br><br>
+    <p id="mensagem"/>
+    
+</body>
+</html>

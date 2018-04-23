@@ -1,0 +1,37 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Web Workers</title>
+
+    <script>
+        var worker;
+        
+        function executarWorker() {
+            var mensagem = document.getElementById("numero");
+            
+            worker = new Worker("primos.js");
+            worker.onmessage = function(event) {
+
+            	
+                mensagem.innerHTML = mensagem.innerHTML + " " + event.data;
+            }
+            
+            mensagem.innerHTML = "";
+            worker.postMessage("");
+        }
+        
+        function pararWorker() {
+            worker.terminate();
+        }
+
+
+        
+
+       
+
+
+    </script>
+
+    <input type="button" value="Iniciar" onclick="executarWorker();">
+    <input type="button" value="Parar" onclick="pararWorker();"> <br/>
+    <p id="mensagem"></p>
+    <input type="number" id="numero">

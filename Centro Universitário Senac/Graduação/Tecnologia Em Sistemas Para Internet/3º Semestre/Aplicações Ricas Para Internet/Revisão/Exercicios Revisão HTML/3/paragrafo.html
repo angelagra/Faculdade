@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paragrafos</title>
+
+
+	<style type="text/css">
+		
+		div{
+			border: 1px solid black;
+			width: 200px;
+			height: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<p draggable = "true" id="p1">Texto 1</p>
+	<p draggable = "true" id="p2">Texto 2</p>
+	<p draggable = "true" id="p3">Texto 3</p>
+	<p draggable = "true" id="p4">Texto 4</p>
+
+
+	<div id="drop">
+		
+	</div>
+
+	<script type="text/javascript">
+
+	function comecouArrastar(ev) {
+		ev.dataTransfer.setData("id", this.id); //define qual o tipo de dados eo valor dos dados arrastados
+	}
+		
+	function arrastandoSobre(ev){
+		ev.preventDefault(); // para nao ficar a imagem de proibido
+	}	
+
+	function soltar(ev){
+		ev.preventDefault();
+		var id = ev.dataTransfer.getData("id");// retorna todos os dados que foram definidos para o mesmo tipo no método SetData()
+		var elem = document.getElementById(id);// os dados arrastados são o id do elemento arrastado
+		this.appendChild(elem);//Anexe o elemento arrastado para o elemento de queda
+	}
+
+	document.getElementById('drop').ondragover = arrastandoSobre; //ondragover indica onde o elemento será solto
+	document.getElementById('drop').ondrop = soltar; //ondrop é quando o elemento é solto na div
+
+	document.getElementById('p1').ondragstart = comecouArrastar; //ondragstart é quando o elemento comeca a ser arrastado
+	document.getElementById('p2').ondragstart = comecouArrastar;
+	document.getElementById('p3').ondragstart = comecouArrastar;
+	document.getElementById('p4').ondragstart = comecouArrastar;
+
+	</script>
+</body>
+</html>

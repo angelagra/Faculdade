@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio Video</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<video  src="movie.mp4" id="video"></video><br><br>
+	
+	<button ><img src="play.png" width="50px" id="play"></button>
+	<button><img src="pause.png" width="50px" id="pause"></button>
+	<meter id="barra" min="3" max="100" value="70"></meter>
+
+
+	<script type="text/javascript">
+	var video = document.getElementById('video');
+	var play = document.getElementById('play');
+	var pause = document.getElementById('pause');
+	
+	play.onclick = function(){
+			video.play();
+	}
+	
+	pause.onclick = function(){
+			video.pause();
+	}
+	
+	
+	</script>
+</body>
+</html>

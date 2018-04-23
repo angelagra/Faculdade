@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reforçando</title>
+</head>
+<body>
+
+
+<video id="video">
+	<source src="movie.mp4">
+</video><br>
+
+<button><img src="play.png" id="play" width="20px"></button>
+<button><img src="pause.png" id="pause" width="20px"></button>
+
+<script type="text/javascript">
+	
+	var video = document.getElementById('video');
+	var play = document.getElementById('play');
+	var pause = document.getElementById('pause');
+
+
+	play.onclick = function () {
+		video.play();
+	}
+
+	pause.onclick = function (){
+		video.pause();
+	}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<!-- draggable = -->
+	<div style="border: 1px solid black;">
+		<p id = "p1" draggable = "true">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
+		<p id = "p2" draggable = "true">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
+		<p  id = "p3" draggable = "true">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
+	</div>
+
+	<div id = "drop" style="border: 1px solid red; height: 800px; width: 100%;">
+		
+	</div>
+
+<script type="text/javascript">
+
+	//função que guardo o id do p arrastado
+	function comecouArrastar(event){
+			event.dataTransfer.setData("id", this.id);
+	}
+
+	//reseta o arrastar padrão 
+	function arrastandosobre(event) {
+		event.preventDefault(); //para nao ficar a imagem de proibido
+	}
+
+	//reseta a ação padrão do elemento soltado
+	function soltar(event){
+		event.preventDefault();
+		var id = event.dataTransfer.getData("id");
+		var elem = document.getElementById(id);
+		this.appendChild(elem); // div que recebe o elemento
+	}
+
+	//reset as ações padroes pro evento drag
+	document.getElementById("drop").ondragover = arrastandosobre;
+	document.getElementById("drop").ondrop = soltar;
+
+	//define o evento de arrasto nos paragrafos
+	document.getElementById("p1").ondragstart = comecouArrastar;
+	document.getElementById("p2").ondragstart = comecouArrastar;
+	document.getElementById("p3").ondragstart = comecouArrastar;
+</script>
+</body>
+</html>

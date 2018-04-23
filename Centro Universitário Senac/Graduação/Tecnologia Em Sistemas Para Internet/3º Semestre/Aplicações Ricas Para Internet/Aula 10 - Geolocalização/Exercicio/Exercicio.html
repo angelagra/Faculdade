@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="LatLon.js"></script>
+		<title>Exercicio</title>
+
+		<style type="text/css">
+          html, body, #mapa {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        </style>
+
+		 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh5rzxfuBPGlU5w_fGZmZbIgl8nAVtCwc"></script>
+
+		<script type="text/javascript">
+		    	
+
+			function distancia() {
+				navigator.geolocation.getCurrentPosition(function(position){ //retorna a posicao do usuario
+
+					var posicao1 = new LatLon(position.coords.latitude, position.coords.longitude);
+					var posicao2 =  new LatLon(-23.6494,-46.6191);
+
+					var dist = posicao1.distanceTo(posicao2);
+
+					var calculo = document.getElementById("cal");
+					calculo.innerHTML = "Distancia:  " + dist + " KM ";
+
+				});		
+			}
+			
+			var latitude1;
+			var longitude1;
+				function carregar() {
+
+				navigator.geolocation.watchPosition(function(position){
+					 var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude ;
+                    carregarMapa(latitude, longitude);
+				
+				})
+				               
+            }
+			
+            
+            function carregarMapa(latitude, longitude, latitude1, longitude1) {
+                var mapOptions = {
+                    center: { lat: latitude, lng: longitude},
+                    zoom: 14
+                };
+				
+                var map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
+                
+                var marker1 = new google.maps.Marker({
+                    position: { lat: latitude, lng: longitude},
+                    map: map,
+                    title: "Minha posição!"
+                });
+				
+				var marker2 = new google.maps.Marker({
+                    position: { lat: -23.6494, lng: -46.6191},
+                    map: map,
+                    title: "Minha Casa!"
+                });
+            }
+
+
+		</script>
+	</head>
+
+	<a href="#" onclick="distancia();">Calcular Distância</a><br>
+	<div id="cal" style=" background-color: red; color: yellow; width: 300px"></div>
+	
+	 <a href="#" onclick="carregar();">Carregar localização</a> <br/>
+        <div id="mapa"></div>
+</html>

@@ -1,0 +1,65 @@
+Web Storage
+
+Porque agente precisa guarda dados?
+ Guardava cookies
+
+- agente guarda dado e pega dados, é um lugar para guarda infomação
+	
+- principais funcçoes
+	setItem("chave", "valor") -> o que quer guardar
+	getItem("chave") 
+
+- Funcoes auxiliares
+	removeItem();
+	clear()
+	key(i), length() -> itera sobre os tens
+
+Diferença entre localStorage e SessionStorage
+
+SessionStorage guarda as informações temporariamente, ate fechar o browser
+
+
+Cache
+	para guardar o arquivo offline
+FaLLBACK
+	substitui aqueles que nao encontrar o arquivo, imagem etc
+NETWORK
+	informa todos os arquivos que não podem fazer cache(não pode ficar offline)
+
+
+------------------------------------------------------------------------------------------------
+CSS3
+-------------------------------------------------------------------------------------------------
+
+GEOLOCALIZAÇÂO
+
+funcionalidade
+	getCurrentPosition() - pega posição atual, só chama uma vez
+	watchPosition() - chama a funçao toda vez que a posiçao mudar
+
+	
+	Passa ate 3 parametros no codigo
+	CALBACK de SUCESSO
+	position.coords.latitude
+
+	CALBACK de ERRO(apenas se quiser tratar o erro)
+
+	OPÇOES
+	enableHighAcurracy -
+	timeout
+	maximumAge
+----------------------------------------------------------------------------------------------------
+
+API Historico
+
+	pushState - 
+
+--------------------------------------------------------------------------------------------------
+
+WEB WORKES
+
+forma de cria execuções javaScript em contexto de e
+
+
+
+

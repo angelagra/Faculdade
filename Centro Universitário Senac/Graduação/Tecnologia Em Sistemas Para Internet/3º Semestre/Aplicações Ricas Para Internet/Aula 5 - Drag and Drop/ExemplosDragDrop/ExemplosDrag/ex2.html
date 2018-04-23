@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Drag and Drop</title>
+    <style>
+        ul {
+            border: dashed;
+            width: 300px;
+        }
+    </style>
+    <script>
+        function inicio(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function arrastando(ev) {
+            ev.preventDefault();
+        }
+        
+        function fim(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+
+<ul id="lista1" ondragover="arrastando(event)" ondrop="fim(event)">
+<b>Lista 1</b>
+    <li id="item1" draggable="true" ondragstart="inicio(event)">Item 1</li>
+    <li id="item2" draggable="true" ondragstart="inicio(event)">Item 2</li>
+    <li id="item3" draggable="true" ondragstart="inicio(event)">Item 3</li>
+    <li id="item4" draggable="true" ondragstart="inicio(event)">Item 4</li>
+    <li id="item5" draggable="true" ondragstart="inicio(event)">Item 5</li>
+</ul>
+
+<ul id="lista2" ondragover="arrastando(event)" ondrop="fim(event)">
+<b>Lista 2</b>
+</ul>
+
+</body>
+</html>

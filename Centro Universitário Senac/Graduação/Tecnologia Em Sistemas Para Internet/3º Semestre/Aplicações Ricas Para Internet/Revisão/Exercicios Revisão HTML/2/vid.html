@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 2</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		
+		#video{
+			border:2px solid black;
+		}
+
+		button{
+			border-radius: 1px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<video id="video">
+		<source src="movie.mp4" type="video/mp4">
+	</video><br>
+	
+		<button><img src="play.png" id="play" width="50px"></button>
+		<button><img src="pause.png" id="pause" width="50px"></button>
+		<meter min="3" max="100" value="70" id="barra"></meter>
+
+<script type="text/javascript">
+
+	document.getElementById('video').ontimeupdate = function(){
+
+		var tempo = document.getElementById('video').currentTime;
+		var duracao = document.getElementById('video').duration;
+		var barra = document.getElementById('barra');
+
+		barra.min = 3;
+		barra.max = duracao;
+		barra.value = tempo;
+
+	}
+	
+	var video = document.getElementById('video');
+	var play = document.getElementById('play');
+	var pause = document.getElementById('pause');
+	
+
+	play.onclick = function () {
+		video.play();
+	}
+
+	pause.onclick = function(){
+		video.pause();
+	}
+
+	
+
+
+
+</script>
+</body>
+</html>

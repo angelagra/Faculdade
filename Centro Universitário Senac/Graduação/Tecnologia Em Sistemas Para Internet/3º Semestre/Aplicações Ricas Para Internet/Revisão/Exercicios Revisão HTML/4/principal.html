@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ajax</title>
+</head>
+<body>
+
+	<button type="button" id="alta">Alta Resolução</button>
+	<button type="button" id="baixa">Baixa Resoluçao</button>
+
+	<div id="img"></div>
+
+	<script type="text/javascript">
+		
+		var alta = document.getElementById("alta");
+		var baixa = document.getElementById("baixa");
+
+	alta.onclick = function(){
+		var xmlhttp = new XMLHttpRequest();
+
+		xmlhttp.onreadystatechange = function(){
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("img").innerHTML = xmlhttp.responseText;
+			}
+		}
+
+		xmlhttp.open("GET", "alta.html", true);
+		xmlhttp.send();
+	}
+
+	baixa.onclick = function(){
+		var xmlhttp = new XMLHttpRequest();
+
+		xmlhttp.onreadystatechange = function(){
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				document.getElementById("img").innerHTML = xmlhttp.responseText;
+			}
+		}
+
+		
+		xmlhttp.open("GET", "baixa.html", true);
+		xmlhttp.send();
+	}
+
+	</script>
+
+</body>
+</html>

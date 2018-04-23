@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audio e Video</title>
+</head>
+
+<body>
+<video src="../Exercício4 - Audio e Video/movie.mp4" id="x"></video>
+<br>
+<br>
+
+<section id="Video">
+	<button onclick="document.getElementById('x').play();">
+    	<img src="play.png" alt="Play" width="30px" id="play">
+    </button>
+	<button onclick="document.getElementById('x').pause();">
+    	<img src="pause.png" alt="Stop" width="30px" id="stop">
+    </button>
+    <meter id="barra" min="0" max="100" value="70"></meter>
+    
+</section>
+
+<br>
+<br>
+
+<section id="Audio">
+	<audio id="audio" controls>
+    	<source src="vincent.ogg" type="audio/ogg">
+        <source src="vincent.mp3" type="audio/mp3">
+    </audio>
+    <img src="play.png" alt="" width="30px" onclick="document.getElementById('audio').play();" id="toca">
+    <img src="pause.png" alt="" width="30px" onclick="document.getElementById('audio').pause();" id="pausa">
+</section>
+
+<script>
+document.getElementById("x").ontimeupdate = function () {
+  var ct = document.getElementById("x").currentTime;
+  var d = document.getElementById("x").duration;
+
+	var barra = document.getElementById("barra");
+	barra.min = 0;
+	barra.max = d;
+	barra.value = ct;
+}
+
+var t = document.getElementById('toca');
+var p = document.getElementById('pausa');
+
+document.getElementById('toca').onclick = function () {
+	t.style.display = ('none');
+	p.style.display = ('block');
+	document.getElementById('audio').play();		
+}
+
+document.getElementById('pausa').onclick = function () {
+	t.style.display = ('block');
+	p.style.display = ('none');
+	document.getElementById('audio').pause();		
+}
+
+
+
+</script>
+</body>
+</html>
