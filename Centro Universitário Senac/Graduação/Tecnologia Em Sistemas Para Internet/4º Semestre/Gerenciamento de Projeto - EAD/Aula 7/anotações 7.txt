@@ -1,0 +1,40 @@
+Gerenciamento da integração do projeto
+	O gerenciamento da integração é o que mantém todas as outras áreas de
+	conhecimento vinculadas e dá organização à gestão do projeto.
+
+ Desenvolver o termo de abertura do projeto
+	O Termo de Abertura do Projeto (TAP) ou Project Charter é o documento que autoriza
+	formalmente o projeto. Podemos chamá-lo de escritura do projeto e suas características
+	estão descritas a seguir:
+		• Designa o gerente de projetos e concede a ele a autoridade para utilizar os recursos
+		da organização na realização do projeto.
+
+		• Define a responsabilidade de criação do patrocinador ou sponsor1; a assinatura do
+		sponsor autoriza formalmente o projeto.
+
+		• Dá legitimidade ao projeto dentro da organização; o patrocinador é o responsável por
+		financiar esse projeto, ou seja, ele pagará pelo projeto. 
+
+  Desenvolver o plano de gerenciamento do projeto
+	O plano de gerenciamento do projeto é um documento de responsabilidade do gerente de
+	projetos, criado por ele com o apoio da equipe do projeto e algumas partes interessadas nele.
+
+	O plano de gerenciamento do projeto é o principal documento de um projeto, pois nele
+	constarão todas as informações necessárias sobre “o que” e “como” será realizado o projeto,
+	com todas as suas estimativas, ou seja, o que vai ser realizado e como isso vai acontecer ao
+	longo do desenvolvimento do projeto.		
+
+   Orientar e gerenciar o trabalho do projeto
+	Orientar e gerenciar o trabalho do projeto é garantir a realização do trabalho definido e
+	estimado no plano de gerenciamento do projeto para atingir os objetivos preestabelecidos.
+
+	A função do gerente de projetos é garantir que os produtos e serviços planejados para
+	serem entregues atendam às expectativas das partes interessadas. 
+
+   Realizar o controle integrado de mudanças
+	É muito comum identificar, durante a execução do projeto, a necessidade de aplicar
+	mudanças e atualizações no planejamento do projeto, a fim de entregar um produto ou serviço
+	que atenda melhor a necessidade do cliente. Entretanto, o gerente de projetos deve estar
+	atento quanto a isso, pois o resultado dessas mudanças refletirá no plano de gerenciamento
+	do projeto, podendo impactar o escopo, o tempo, os custos e a qualidade do projeto, o que
+	conhecemos como restrição tripla do projeto

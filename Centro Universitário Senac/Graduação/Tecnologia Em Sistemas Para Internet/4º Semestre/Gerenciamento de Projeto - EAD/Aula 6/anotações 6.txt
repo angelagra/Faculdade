@@ -1,0 +1,38 @@
+ - Processos de execução
+	Os processos de execução do projeto têm como objetivo garantir que a equipe do projeto
+	execute exatamente o que consta no plano de gerenciamento do projeto, ou seja, esses
+	processos consistem em garantir a conclusão do trabalho definido no plano de gerenciamento
+	do projeto de forma a cumprir as suas especificações.
+
+ - Processo de monitoramento e controle
+	O objetivo dos processos de monitoramento e controle é assegurar que a execução do
+	projeto esteja sendo realizada em conformidade com os objetivos estabelecidos no plano de
+	gerenciamento do projeto. Este grupo consiste nos processos necessários para acompanhar
+	e revisar o progresso do projeto, bem como o seu desempenho.
+
+ - Processo de encerramento
+	O objetivo dos processos de encerramento é formalizar a aceitação do projeto — ou fase
+	dele — e encerrá-lo com suas devidas documentações.
+	Os processos de encerramento consistem na finalização de todas as atividades de todos os
+	grupos de processos de gerenciamento do projeto, visando concluir formalmente o projeto ou
+	uma fase dele, bem como as obrigações contratuais com fornecedores e terceiros do projeto.
+
+  * Planejando o projeto
+	Durante o planejamento do projeto, deve-se elaborar o Plano de Gerenciamento do
+	Projeto, contemplando todas as áreas de conhecimento da gestão de projetos 
+ 
+  * Execução do projeto
+	Durante a execução do projeto, deve-se garantir que a equipe do projeto execute o Plano
+de Gerenciamento do Projeto
+
+   * Monitorando e controlando o projeto
+	Durante o monitoramento e controle do projeto (Figura 4), deve-se assegurar que os
+objetivos do projeto estão sendo atingidos, acompanhando e revisando o progresso e o
+desempenho do projeto. 
+
+  *  Encerrando o projeto
+Durante o encerramento do projeto, deve-se concluir as lições apreendidas e o relatório
+de encerramento do projeto 
+	
+	
+		

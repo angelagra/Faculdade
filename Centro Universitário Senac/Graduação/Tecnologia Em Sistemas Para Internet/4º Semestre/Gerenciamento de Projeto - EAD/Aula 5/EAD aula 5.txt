@@ -1,0 +1,32 @@
+PMBOK é apenas um guia, e não uma metodologia de gerenciamento de projetos. Apenas indica as boas práticas a serem utilizadas
+O Guia PMBOK contempla cinco grupos de processos do gerenciamento de projetos, são eles:
+1. Processos de Iniciação;
+2. Processos de Planejamento;
+3. Processos de Execução;
+4. Processos de Monitoramento e Controle;
+5. Processos de Encerramento.
+
+
+- Processos de Iniciação
+Termo de abertura do projeto
+Documento que da legitimidade ao projeto, como se fosse a escritura do projeto
+
+
+
+-  Processos de planejamento
+Trata-se de um documento que define "o que", "como", "onde" e "quem" realizará o projeto
+O planejamento do projeto é um processo dinâmico e contínuo, que não
+termina na execução do projeto. É uma incoerência achar que basta realizar um
+planejamento e entregá-lo para execução. O planejamento de um projeto é
+dinâmico e tende a sofrer alterações em todo o seu ciclo de vida, pois todo
+projeto é progressivo
+
+ - Escopo
+ - Tempo
+ - Custos
+ - Qualidade
+ - REcurso Humano
+ - Cominucações
+ - Riscos
+ - Aquisições
+ - Partes Interessadas
