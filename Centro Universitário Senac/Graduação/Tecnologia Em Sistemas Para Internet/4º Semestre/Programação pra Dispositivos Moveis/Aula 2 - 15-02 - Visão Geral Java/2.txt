@@ -1,0 +1,95 @@
+
+package exercicio.pkg1;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System. in);
+         
+         System.out.println("Hoje é dia Util? Sim:1 Não:0");
+         int util = scan.nextInt();
+         
+         System.out.println("Esta de Férias? Sim:1 Não:0");
+         int ferias = scan.nextInt();
+         
+         if(util == 1 && ferias == 1 || util == 0 && ferias == 1){
+             System.out.println("Pode dormir até mais tarde");
+         }
+         else if(util == 1 && ferias == 0 || util == 0 && ferias == 0){
+            System.out.println("Voçê nao pode dormir ate mais tarde");
+         }
+    }
+    
+}
+
+-----------------------------------------------------------------------------
+
+exercicio 2
+
+package exercicio.pkg2;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System. in);
+        
+       
+        do{
+            System.out.println("Digite um numero:");
+            double valor =  scan.nextInt();
+
+            
+            if(valor % 2 == 0){
+                System.out.println("É Par");
+            }
+            else{
+                System.out.println("Não é par");
+            }
+        }while(valor);
+            
+      
+  
+        
+    }
+    
+}
+
+-------------------------------------------------------------
+
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicios {
+
+ 
+    public static void main(String[] args) {
+               
+        Scanner scan = new Scanner(System. in);
+            
+            System.out.println("Digite a nota 1: ");
+            double nota1 = scan.nextInt();
+
+            System.out.println("Digite a nota 2: ");
+            double nota2 = scan.nextInt();
+
+            System.out.println("Digite a nota 3: ");
+            double nota3 = scan.nextInt();
+        
+        System.out.println("Total: " + Media(nota1,nota2,nota3));
+        
+    }
+    
+        public static double Media(double nota1, double nota2, double nota3){
+                 
+            double total = (nota1 + nota2 + nota3)/3;
+            
+            return total;
+        }
+    
+}
+
