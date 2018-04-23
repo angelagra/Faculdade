@@ -1,0 +1,31 @@
+// REDIRECT
+protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+        
+        String email = req.getParameter("email");
+        
+         Cliente cli = new Cliente();
+         cli.setEmail(email);
+         
+         lista.add(cli);
+         
+         resq.sendRedirect("cliente");
+        
+}
+
+
+//FORWARD
+ protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        String email = req.getParameter("email");
+        
+         Cliente cli = new Cliente();
+         cli.setEmail(email);
+         
+         lista.add(cli);
+         
+         RequestDispatcher dispatcher = req.getRequestDispatcher("cliente.jsp");
+         req.setAtribute("lista", lista);
+         dispatcher.forward(req,resp);
+        
+    }

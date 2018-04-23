@@ -1,0 +1,5 @@
+Para fazer um mapeamento de uma classe qualquer 3 coisa tem que acontecer
+
+ - Mapea a classe base @XmlRootElement
+ - public classs Aluni Implements Serializable
+ - Obrigatorio tem um construtor sem parametros Ex: protected Aluno(){}

@@ -1,0 +1,12 @@
+P1
+JAVA
+SERVLETS
+AJAX 
+JAX-RS + JAXB
+ (WS)     (JSON)
+-----------------
+
+JDBC
+DAO + FACTORY
+JAX-WS
+  (WS)

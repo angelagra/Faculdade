@@ -1,0 +1,19 @@
+Forward
+
+É executado internamente pelo servlet (controller);
+O browser não sabe o que está ocorrendo durante o processamento no servidor, ou seja, não sabe por quais servlets ou páginas a requisição está passando;
+No final do processamento da requisição a url da barra de endereços do browser não muda;
+O reload da página resultante irá executar a requisição original;
+
+Redirect
+
+É um processo de dois passos, ao receber uma requisição a aplicação web “pede” ao browser para acessar uma segunda url, por isso a url muda;
+O reload de página não repetirá a requisição original, mas sim a nova url (2ª requisição); Methodo Post/Get
+É um processo muito mais lento que um forward, pois são necessárias duas requisições, e não uma;
+Objetos colocados no escopo do request original são perdidos durante o segundo request;
+
+
+
+https://www.youtube.com/watch?v=ewu_QGo8R_Q
+
+http://www.rponte.com.br/2008/07/12/repitam-comigo-redirect-nao-e-forward/
