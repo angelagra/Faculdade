@@ -1,0 +1,72 @@
+<html>
+	<head>
+
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+			<div id="tab" style="margin-top: 20px;">
+					<div id="tabControl" style="width: 250px; border: 1px solid darkgreen; height: 25px;">
+						<div id="tabButton1" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx1 selecionado">
+							tab 1
+						</div>
+						<div id="tabButton2" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx2">
+							tab 2
+						</div>
+						<div id="tabButton3" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx3">
+							tab 3
+						</div>
+					</div>
+					<div style="clear: both;"> </div>
+					<div id="tabContent" style="width: 250px; border: 1px solid darkgreen; height: 200px;">
+						<div id="tabContent1" style="width: 200px; height: 50px; border: 1px solid red; display: block;" class="tabContent tContentIdx1">
+							conteudo tab1
+						</div>
+						<div id="tabContent2" style="width: 200px; height: 50px;  border: 1px solid green; display: none;" class="tabContent tContentIdx2" >
+							conteudo tab2
+						</div>
+						<div id="tabContent3" style="width: 200px; height: 50px; border: 1px solid blue; display: none;" class="tabContent tContentIdx3">
+							conteudo tab3
+						</div>
+					</div>
+				</div>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+		//COLOQUE O CODIGO DA CLONAGEM AQUI
+
+		//attr é atribui um elemento ex: id, class
+		//appendTo adiciona conteudo ou elemento
+		$("#tabButton3").clone().attr("id","tabButton4").html("tab 4").appendTo("#tabControl");
+		$("#tabContent3").clone().attr("id","tabContent4").html("conteudo tab4").appendTo("#tabContent");
+
+
+		$(".tabContent").css("display","none");
+		$(".tContentIdx1").css("display","block");
+
+		$(".tabButton").each ( function (i) {
+				$(this).click ( function () {
+					$(".tabButton").removeClass ("selecionado");
+					$(".tabContent").css ("display","none");
+
+					$(".tabContent").each (function (j) {
+						if (i==j)
+							$(this).css("display","block");
+
+					});
+
+
+					$(this).addClass ("selecionado");
+				});
+
+
+
+		});
+
+
+	</script>
+	<body>
+</html>

@@ -1,0 +1,79 @@
+
+<html>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+4 - a $(div ~ span)-> 4 seleciona os spans irmãos de divs(somente os proximas/depois da div)
+    b hasClass-> 11 testa se o elemento pré selecionado tem determinada classe
+    c $("div + span")-> 8 seleciona span exatamente so lado das divs
+    d blur -> 13 adiciona um evento ao elemento html que será executado com quando o elemento perder o foco
+    e on -> 1 adiciona um evento aos elementos pré-selecionados
+    f before -> 7 adiciona um elemento antes dos elementos pré selecionados
+    g trigger -> 16 Executa um evento do elemento
+    h $("div span") -> 12 seleciona os spans descendentes de divs
+    i toggleClass -> 6 alterna uma classe de estilo
+    j prepend -> 3 adiciona um elemento no inicio dos elementos filhos do conjunto pré selecionado
+    k one -> 15 Insere um evento para ser executado uma unica vez
+    l html -> 9 alterna uma classe de estilo
+    m click -> 5 adiciona ou simula um evento de click ao elemento
+    n detach -> 14 desacopla os elemntos pré selecionados da arvore DOM
+    o attr -> 2 altera ou inspeciona o atributo de um elemento
+    p wrap -> 17 encapsula o elemento com outro elemento
+    q empty -> 10 remove todos os elementos filhos de um elemento
+
+
+//5 c)
+	$("#enviar").click(function(){
+		return false;
+	 })
+
+	$("#enviar").on("click",function(){
+		return false;
+
+	})
+
+
+ //e) 
+    $("radio : checked").val();
+    $("  : checked").val();
+    $("select : select").val();
+
+//6 a,b
+   $("#tabButton1").click(function(){
+     
+     $("#tabButton1").addClass("selecionado");
+     $("#tabButton2").removeClass("selecionado");
+     $("#tabButton3").removeClass("selecionado");   
+
+     $("#tabContent1").show();
+     $("#tabContent2").hide();
+     $("#tabContent3").hide();
+   })
+
+   $("#tabButton2").click(function(){
+     
+     $("#tabButton2").addClass("selecionado");
+     $("#tabButton1").removeClass("selecionado");
+     $("#tabButton3").removeClass("selecionado");  
+
+     $("#tabContent2").show();
+     $("#tabContent1").hide();
+     $("#tabContent3").hide();
+   })
+
+   $("#tabButton3").click(function(){
+
+     $("#tabButton3").addClass("selecionado");
+     $("#tabButton2").removeClass("selecionado");
+     $("#tabButton1").removeClass("selecionado");  
+
+     $("#tabContent3").show();
+     $("#tabContent2").hide();
+     $("#tabContent1").hide();
+   })
+
+
+
+</script>
+
+ </html>

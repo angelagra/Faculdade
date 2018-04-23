@@ -1,0 +1,118 @@
+<html>
+	<head>
+
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+	<div style="width: 150px">
+	<div style="float:left">
+		<div id="barraconteudo1" style="width: 150px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+			barra de conteudo 1
+		</div>
+		<div id="conteudo1" style="width: 150px; height: 200px; border: 1px solid black; display:none">
+			conteudo 1
+		</div>
+	</div>
+
+	<div style="float:left">
+		<div id="barraconteudo2" style="width: 150px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+			barra de conteudo 2
+		</div>
+		<div id="conteudo2" style="width: 150px; height: 200px; border: 1px solid black; display:none">
+			conteudo 2
+		</div>
+	</div>
+
+
+	<div style="float:left">
+		<div id="barraconteudo3" style="width: 150px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+			barra de conteudo 3
+		</div>
+		<div id="conteudo3" style="width: 150px; height: 200px; border: 1px solid black; display:none">
+			conteudo 3
+		</div>
+	</div>
+	</div>	
+	
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+		//4.
+
+			/*Ao clicar na barra de conteúdo1, exiba/desapareça com a div do conteúdo1 usando o show/hide. Faça a mesma coisa com a barra de conteúdo e o conteúdo2, mas usando slideUp e slideDown. Use fadeIn e fadeOut na dupla barra de conteúdo 3, div de conteúdo 3.
+
+			Fazer com que, após o conteúdo x aparecer (somente ao fim do animação), os outros conteúdos desapareçam respeitando a função já inserida no item a. Use a velocidade slow em todos os efeitos.*/
+
+		$("#barraconteudo1").click(function(){
+
+			var aberto = $("#conteudo1").css("display");
+			var barra2 = $("#conteudo2").slideUp();
+			var barra3 = $("#conteudo3").fadeOut();
+
+
+			if(aberto == "block"){
+				$("#conteudo1").hide();
+			}
+
+			if(aberto == "none"){
+				$("#conteudo1").show();
+			}
+
+			if(barra2 && barra3 == true ){// se as barras estiverem aberta serão fechadas
+				barra2.slideDown();
+				barra3.fadeIn();
+			}
+		})
+
+
+		
+		$("#barraconteudo2").click(function () {
+			
+			var aberto = $("#conteudo2").css("display");
+			var barra1 = $("#conteudo1").hide();
+			var barra3 = $("#conteudo3").fadeOut();
+
+			if(aberto =="block"){
+				$("#conteudo2").slideUp();
+			}
+		  
+
+		  	if(aberto == "none"){
+				$("#conteudo2").slideDown();
+			}
+
+			if(barra1 && barra3 == true){ 
+				barra1.show();
+				barra3.fadeIn();
+			}
+		})
+
+		$("#barraconteudo3").click(function(){
+
+			var aberto = $("#conteudo3").css("display");
+			var barra1 = $("#conteudo1").hide();
+			var barra2 = $("#conteudo2").slideUp();
+
+			if(aberto == "block"){
+				$("#conteudo3").fadeOut();
+			}
+
+			if(aberto == "none"){
+				$("#conteudo3").fadeIn();
+			}
+
+			if(barra1 && barra2 == true){
+				barra1.show();
+				barra2.slideDown();
+			}
+		})
+		
+
+	</script>
+	<body>
+</html>

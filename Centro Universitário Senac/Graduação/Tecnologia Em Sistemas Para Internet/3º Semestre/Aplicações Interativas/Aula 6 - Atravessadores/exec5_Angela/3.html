@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercico 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<input type="text" value="Textinho"><br><br>
+
+<button>Clique Aqui</button>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+//simular o click em algum botão da tela. (uso do click e do trigger obrigatórios)
+
+	$("input").select(function () {
+		$("input").after("Clicado");
+	})
+
+	$("button").click(function(){
+		$("input").trigger("select");
+	})
+	
+</script>
+</body>
+</html>

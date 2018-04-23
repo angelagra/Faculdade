@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<style>
+			.naoValidado {
+				border: 2px solid red;
+			}
+		</style>
+		<script>
+			function validaForm () {
+				var valido = true;
+				
+				return valido;
+			
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercício</h1>
+			
+			<div id="innerBox" style ="margin: 0px auto; width: 200px;">
+					<form > <!-- Quando fizer uma validação ou coloca a função no botão submit ou no form (onSubmit="return validaForm ();") -->
+						<div style="margin-top: 20px; height: 20px;">
+							<span >email:</span><input id="email" type="input"/>
+						</div>
+						<div style="margin-top: 20px; height: 20px;">
+							<span>pass:</span><input id="pass" type="password"/>
+						</div>
+						<div style="margin-top: 20px; height: 20px;">
+							<input id = "enviar" type="submit" value="login"/>
+						</div>
+					</form>	
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			var enviar = document.getElementById('enviar');
+			enviar.onclick = function(){
+
+				var email = document.getElementById('email');
+				var pass = document.getElementById('pass');
+
+				var validado = true;
+
+				var emailValue = email.value;
+				if (emailValue == "") {
+					alert("email não preenchido");
+					validado = false;
+				}
+
+				var passValue = pass.value;
+				if (passValue == "") {
+					alert("pass não preenchido");
+					validado = false;
+				}
+
+				return validado;
+			}
+
+		</script>
+		
+		
+
+	<body>
+</html>

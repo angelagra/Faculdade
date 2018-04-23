@@ -1,0 +1,102 @@
+<html>
+	<head>
+
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+			<div id="tab" style="margin-top: 20px;">
+					<div style="width: 550px; border: 1px solid darkgreen; height: 25px;">
+						<div id="b1" style="width: 100px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+							Shih-tzu
+						</div>
+						<div id="b2" style="width: 100px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+							Pastor Alemão
+						</div>
+						<div id="b3" style="width: 100px; height: 25px; border: 1px solid black; float: left; cursor: pointer;">
+							Labrador
+						</div>
+					</div>
+					<div style="clear: both;"> </div>
+					<div style="width: 550px; border: 1px solid darkgreen; height: 400px;"> 
+						<div id="c1" style="width: 540px; height: 390px; border: 1px solid red; display: block;">
+						
+						</div>
+						<div id="c2" style="width: 540px; height: 390px;  border: 1px solid green; display: none;"  >
+						
+						</div>
+						<div id="c3" style="width: 540px; height: 390px; border: 1px solid blue; display: none;" >
+						
+						</div>
+					</div>
+				</div>
+				
+				
+				
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+		$("#b2").click (function () {
+			$.ajax ("getDog.php?idDog=pastorAlemao")
+				.done ( function (data) {
+					$("#c2").html (data);				
+				} )
+				
+		
+			$("#c1, #c3").hide ();
+			$("#c2").show ();
+		
+		
+		})
+		
+		
+		$("#b1").click (function () {
+			$.ajax ("getDog.php?idDog=shengshui")
+				.done ( function (data) {
+					$("#c1").html (data);				
+				} )
+				
+		
+			$("#c2, #c3").hide ();
+			$("#c1").show ();
+		
+		
+		})
+		
+		
+		document.getElementById ("b3").onclick = function () {
+			document.getElementById("c1").style.display='none';
+			document.getElementById("c2").style.display='none';
+			document.getElementById("c3").style.display='block';
+			
+			var xmlhttp = new XMLHttpRequest ();
+			xmlhttp.onreadystatechange = function () {
+			
+				 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					document.getElementById("c3").innerHTML = xmlhttp.responseText;
+				 } 
+			}
+			xmlhttp.open ("GET","getDog.php?idDog=labrador");
+			xmlhttp.send ();
+		
+		
+		
+		}
+		
+		
+		
+
+
+
+
+
+
+
+
+	</script>
+	<body>
+</html>

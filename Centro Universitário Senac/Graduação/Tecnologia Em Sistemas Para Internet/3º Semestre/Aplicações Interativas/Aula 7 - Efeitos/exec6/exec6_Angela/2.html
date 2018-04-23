@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<ul class="ull">
+  <li>I</li>
+  <li class="item">II
+    <ul>
+      <li>A</li>
+      <li>B
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </li>
+      <li>C</li>
+    </ul>
+  </li>
+  <li>III</li>
+</ul>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+	//2. (html livre) monte um exemplo que mostre a diferença entre find e children
+
+		$("li.item").find("li").css("background-color","blue");
+
+		$("ul.ull").children().css("border","3px solid red");
+		
+		
+
+	</script>
+
+</body>
+</html>

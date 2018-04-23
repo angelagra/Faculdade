@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+			
+			.botao {
+				width: 50px; height: 25px; border: 1px solid black; float: left; 
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<script>
+			
+		</script>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercícios</h1>
+			
+			<div id="innerBox" style ="margin: 0px auto; width: 200px;">
+				
+				
+				<div id="tab" style="margin-top: 20px;">
+					<div id="tabControl" style="width: 200px; border: 1px solid darkgreen; height: 25px;">
+						<div id="tabButton1" class="botao selecionado asdashda">
+							tab 1
+						</div>
+						<div id="tabButton2" class="botao">
+							tab 2
+						</div>
+						<div id="tabButton3" class="botao">
+							tab 3
+						</div>
+					</div>
+					<div style="clear: both;"> </div>
+					<div id="tabContent" style="width: 200px; border: 1px solid darkgreen; height: 200px;">
+						<div id="tabContent1" style="width: 200px; height: 50px; border: 1px solid red;" >
+							conteudo tab1
+						</div>
+						<div id="tabContent2" style="width: 200px; height: 50px;  border: 1px solid green;" >
+							conteudo tab2
+						</div>
+						<div id="tabContent3" style="width: 200px; height: 50px; border: 1px solid blue;" >
+							conteudo tab3
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$("#tabButton1").removeClass ("selecionado");
+			$("#tabButton2").addClass ("selecionado");
+			
+			var id = $("#tabButton3").attr ("id");
+			$("#tabButton3").attr ("id","tabButton4");
+			
+			var conteudo = $("#tabContent2").html ();
+			
+			$("#tabContent2").html ("asiasjijasfiojasifjas");
+			
+			
+			$("#tabContent2").css ("display","none");
+			
+			var display = $("#tabContent2").css ("display");
+			alert (display);
+			
+			
+			
+			$("#tabButton2").click ( function () {
+				alert ("yo");
+				
+			}   );
+			
+			var id = $(".botao").css ("border","2px solid blue").css ("font-size","30px").attr ("id");
+			alert (id);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					
+			
+		</script>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<body>
+</html>

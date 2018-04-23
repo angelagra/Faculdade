@@ -1,0 +1,23 @@
+atravessadores, efeitos, jQuery Ui,Ajax
+
+
+Cai na Parte Teorica, 
+
+Defina o que é atravessadores
+ - Palavras chaves: Percorrer a arvore dom atraves de sua hierarquia, porque muitas vezes nao tem id ou classe e temos que usar atravessadores para percorrer o arquivo
+
+
+
+EFeitos:
+
+Explique o que faz: interpolam valores numeros atraves do tempo, tem comportamento assincrono, evitando travamentos
+
+
+Cai na Parte Objetiva
+JqueryUI:
+
+
+Ajax E Json 
+
+Exemplos feitos, pegar no black
+

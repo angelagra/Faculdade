@@ -1,0 +1,47 @@
+Seletores, Manipuladores e eventos.
+
+Aula 1 - 12
+
+Conceito GET >ACT
+$("").attr(,)
+Primeiro obtem depois atua
+
+
+dois parametros setar um parametros opter
+
+Encadeamento
+consegue encadear as informaçoes ate fazer um Get
+$("abc").addclass("appt").removeClass("apr").attr("id")
+
+
+-----------------------------------------------------
+
+
+Aual 2 - 
+
+Seletores é uma forma de obter elementos na arvore dom 
+pode usar filtro css pra buscar 
+
+$(.classedoselementos).get(0) - tira do elemento jquery e volta como elemento html
+
+
+
+--------------------------------------------------------
+
+
+Manipularores
+
+Usa para alterar o elemento ou opter 
+pegando atributos ou setando atributos, ou setando elemento ou removendo elementos.
+
+
+------------------------------------------------------------
+
+Eventos
+
+cria o proprio objeto dele
+
+
+$("#my").trigger("click") -- dispara um evento "click"
+
+$("#x").on("click", f) -- dois paramentos um é o evento outro é a função - 

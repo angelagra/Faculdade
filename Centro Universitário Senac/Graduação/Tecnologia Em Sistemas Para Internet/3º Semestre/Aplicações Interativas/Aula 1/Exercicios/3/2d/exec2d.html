@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<style>
+			.even {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercícios</h1>
+			<div id="innerBox" style ="margin: 0px auto; width: 200px;">
+				<table border="1" cellpadding="3">
+					<tbody>
+						<tr>
+							<td>First Name</td>
+							<td>Last Name</td>
+							<td>Points</td>
+						</tr>
+						<tr class="female">
+							<td>Jill</td>
+							<td>Smith</td>
+							<td>50</td>
+						</tr>
+						<tr class="male">
+							<td>John</td>
+							<td>Doe</td>
+							<td>80</td>
+						</tr>
+						<tr class="female">
+							<td>Eve</td>
+							<td>Jackson</td>
+							<td>94</td>
+						</tr>
+						<tr class="male">
+							<td>Adam</td>
+							<td>Johnson</td>
+							<td>67</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+  	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script>
+      		//SELETORES BASICOS
+
+      		//2a 
+      		// – aplique um css em algum elemento selecionado via ID usando JQuery
+      		$("#title").css("border", "1px solid blue");
+
+      		//2b
+      		//- aplique um css em algum elemento selecionado via classe de estilo  usando JQuery
+      		$(".female").css("border", "1px solid yellow");
+
+      		//2c	
+      		// - aplique um css em um tipo de elemento utilizando JQuery (exemplo, em todas as divs da pagina)
+      		$("div *").css("color", "gray");
+
+      		//2d 
+      		// – aplique o css pintando as linhas da tabela que contem nomes femininos de vermelho (background-color: lightcoral) e as linhas que contem nomes masculinos de azul (background-color: lightblue)
+      		$(".female").css("background-color", "lightcoral");
+      		$(".male").css("background-color", "lightblue");
+
+      </script>
+	<body>
+</html>

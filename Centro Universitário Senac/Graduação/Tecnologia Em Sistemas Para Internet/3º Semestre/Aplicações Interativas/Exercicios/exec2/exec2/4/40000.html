@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<style>
+			.naoValidado {
+				border: 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercício</h1>
+
+			<div id="innerBox" style ="margin: 0px auto; width: 300px;">
+					<form onSubmit="return validaForm ();">
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >nome:</span><input id="name" type="text"/>							
+						</div>
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >endereço:</span><input id="address" type="text"/>							
+						</div>
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >estado:</span>
+							<select name="estado" >
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espírito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RN">Rio Grando do Norte</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+							</select>
+						</div>
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >email:</span><input id="email" type="text"/>							
+						</div>
+						<div style="margin-top: 20px; height: 20px;">
+							<span>pass:</span><input id="pass" type="password"/>
+						</div>
+						<div style="margin-top: 20px; height: 40px;">
+							<span>CPF na nota fiscal?:</span><input type="checkbox" id="cpfNaNota"/><input id="cpf" type="text" disabled="disabled"/>
+						</div>
+						<div style="margin-top: 20px; height: 40px;">
+							<span>pagamento:</span>
+								<input type="radio" name="paymentType" value="avista"/><span>a vista</span>
+								<input type="radio" name="paymentType" value="2x"/><span>2x</span>
+								<input type="radio" name="paymentType" value="3x"/><span>3x</span>
+						</div>
+
+						<div style="margin-top: 20px; height: 20px;">
+							<input type="submit" id="submit" value="pagar"/>
+						</div>
+					</form>
+
+			</div>
+		</div>
+
+
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript">
+      		
+      		$("#cpfNaNota").click(function(){
+
+
+
+      		})
+
+      		
+
+      	  /*4a*/$(":submit").click(function () {
+
+      		/*4b*/ var nome = $(":text[id='name']").val();
+      				if(nome == ""){
+      					alert("Preencha o nome");
+      					return false;
+      				}
+
+      		/*4b*/ var address = $(":text[id='address']").val();
+      				if(address == ""){ 
+      					alert("Preencha o Endereço");
+      					return false;
+      				}
+      				return true;
+      			})
+      			
+      		//4a (use base 4) – aplique uma função de validação ao botão submit utilizando o filtro de form para esse elemento
+
+            //4b (use base 4) – valide (conteúdo diferente de vazio) todos os inputs do tipo text e password que estão HABILITADOS (enabled), utilizando os seletores de form e seus filtros. Caso algum campo não esteja validado, tenha certeza que a função de validação atribuída no item 8a retorne false. Dica: para pegar o conteúdo  dos inputs, utilize a função $(“seletor”).val ( ).
+
+
+
+            //4c (use base 4) – faça com que se o usuário clicar no checkbox id =”cpfNaNota”, todos os campos desabilitados do form sejam habilitados, usando os filtros de form para elementos desabilitados. Dica: para habilitar um elemento, utilize $(“seletor”).removeAttr (“disabled”);
+
+            //4d (use base 4) – consiga o valor do combobox estado e exibia-o através de um alerta
+
+            //4e (use base 4) – consiga o valor do radiobutton paymentType e exibia-o através de um alerta
+		
+      		
+
+
+      </script>
+
+	<body>
+</html>

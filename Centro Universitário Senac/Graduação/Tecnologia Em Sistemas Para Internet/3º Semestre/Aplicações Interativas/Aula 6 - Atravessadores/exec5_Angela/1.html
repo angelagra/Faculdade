@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Exercicio 1</title>
+</head>
+<body>
+
+<h1>Papel</h1>
+<p id="texto"> Constituída por elementos fibrosos de origem vegetal, os quais formam uma pasta que se faz secar sob a forma de folhas delgadas, para diversos fins: escrever, imprimir, embrulhar etc.</p>
+
+<p id="mouse">Mova o Mouse Aqui</p>
+
+<input id = "press" placeholder="Pressione uma Tecla"><br><br>
+
+<button id="clique">Clique</button>
+<button id="duplo">Duplo Click</button>
+<button id="focu">Obter Foco</button>
+<button id="erro">Erro</button>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	
+	//(quando o elemento perde o foco) - Quando o #clique fo clicado tem foco, se clicar em outro lugar perderá foco e o h1 ficará com bordar
+	$("#clique").blur(function(){
+		$("h1").css("border", "1px solid black");
+	})
+
+	//(quando há um clique de mouse no elemento) - Quando o botao clique for clicado aparecerá um alert
+	$("#clique").click(function(){
+		alert("Foi clicado");
+	})
+
+	//(quando há um duplo clique de mouse no elemento) - Botão Duplo Click for clicado aparecerá um alert
+	$("#duplo").dblclick(function(){
+		alert("Duplo Click");
+	})
+
+	//(quando o ponteiro do mouse está sobre o elemento) - Quando o mouse passar no h1 irá deixar o texto vermelho
+	$("h1").mouseover(function () {
+		$("#texto").css("background-color","red");
+	})
+	
+	//(quando o ponteiro do mouse sai da área do elemento) - Quando o mouse sair do h1 irá deixar o texto azul
+	$("h1").mouseout(function(){
+		$("#texto").css("background-color", "blue");
+	})
+
+	//(quando o botão do mouse é solto) - quando soltar o botao do mouse no h1 o texto ficará com uma borda
+	$("h1").mouseup(function(){
+		$("#texto").css("border","3px solid black");
+	})
+
+	//(quando o botão do mouse é pressionado) - Quando clicar no h1 o botao duplo click ficará com uma cor amarela 
+	$("h1").mousedown(function(){
+		$("#duplo").css("background-color", "yellow");
+	})
+
+
+
+	//(quando a tecla está pressionada) - quando digitar alguma no input ele ficará rosa  
+	$("input").keypress(function(){
+		$("input").css("background-color", "pink")
+	})
+
+	//(quando a tecla é solta) - quando a teclado do mouse for solta o input ficará cinza 
+	$("input").keyup(function(){
+		$("input").css("background-color", "gray")
+	})
+
+	//(quando a tecla é pressionada) - quando a teclado é precionado o input ficará amarelo
+	$("input").keydown(function(){
+		$("input").css("background-color", "yellow")
+	})
+
+
+	//(quando o elemento obtêm foco) - quando clicar no botao obter foco aparecerá um alert 
+	$("#focu").focus(function(){
+		alert("obteve Foco");
+	})
+
+	//(mousemove-quando o ponteiro do mouse se move sobre o elemento ) -
+	$("#mouse").mousemove(function(){
+		$("#mouse").css("background-color", "gray");
+	}) 
+
+
+	//(error-quando há um erro com o elemento html) - 
+	$("#erro").error(function(){
+		alert("A um erro com o elemento");
+	})
+</script> 
+
+</body>
+</html>

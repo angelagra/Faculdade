@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<script src="jquery-1.9.1.min.js"></script>
+		<style>
+			.selecionado {
+				font-weight: bold;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+			<div id="tab" style="margin-top: 20px;">
+					<div id="tabControl" style="width: 200px; border: 1px solid darkgreen; height: 25px;">
+						<div id="tabButton1" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx1 ">
+							tab 1
+						</div>
+						<div id="tabButton2" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx2">
+							tab 2
+						</div>
+						<div id="tabButton3" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx3 selecionado">
+							tab 3
+						</div>
+					</div>
+					<div style="clear: both;"> </div>
+					<div id="tabContent" style="width: 200px; border: 1px solid darkgreen; height: 200px;">
+						<div id="tabContent1" style="width: 200px; height: 50px; border: 1px solid red; display: none;" class="tabContent tContentIdx1">
+							conteudo tab1
+						</div>
+						<div id="tabContent2" style="width: 200px; height: 50px;  border: 1px solid green; display: none;" class="tabContent tContentIdx2" >
+							conteudo tab2
+						</div>
+						<div id="tabContent3" style="width: 200px; height: 50px; border: 1px solid blue; display: none;" class="tabContent tContentIdx3">
+							conteudo tab3
+						</div>
+					</div>
+				</div>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script>
+				//Manipulador addClass, hasClass, removeClass, toggleClass 
+				//  a) (html base livre) adicione uma classe de estilo em um elemento html (classe de estilo deve impor uma mudança no visual)
+
+				//    b) (html base livre)  remova uma classe de estilo de um elemento html (remoção de estilo deve impor uma mudança no visual)
+
+				//  c)  use o método hasClass para exibir a div do conteúdo da tab que esta selecionada (ou seja, que possui a classe de estilo selecionado)
+
+				//) d) use toggleClass para alternar a classe de estilo selecionado do elemento de id botao toda vez que clicá-lo. 
+
+				$(".tabButton").addClass ("selecionado");
+
+				$(".Idx2").removeClass("selecionado");
+
+				if($(".Idx3").hasClass("selecionado") == true){
+
+					$(".tContentIdx3").show();
+				}
+
+
+		</script>
+	<body>
+</html>

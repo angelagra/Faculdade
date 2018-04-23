@@ -1,0 +1,89 @@
+<!--(html livre) Aplicar uma função que faça qualquer ação (alert, mude css de um elemento) utilizando todos os eventos encapsulados no jQuery em um unico arquivo html.
+blur-quando o elemento perde o foco
+change-quando o elemento muda
+click-quando há um clique de mouse no elemento
+dbclick-quando há um duplo clique de mouse no elemento
+error-quando há um erro com o elemento html
+focus-quando o elemento obtêm foco
+keydown-quando a tecla é pressionada
+keyup-quando a tecla é solta
+keypress-quando a tecla está pressionada
+mousedown-quando o botão do mouse é pressionado
+mouseup - quando o botão do mouse é solto
+mouseover-quando o ponteiro do mouse está sobre o elemento
+mouseout-quando o ponteiro do mouse sai da área do elemento
+mousemove-quando o ponteiro do mouse se move sobre o elemento 
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Exercicio 1</title>
+</head>
+<body>
+
+<h1>Papel</h1>
+<p id="texto"> Constituída por elementos fibrosos de origem vegetal, os quais formam uma pasta que se faz secar sob a forma de folhas delgadas, para diversos fins: escrever, imprimir, embrulhar etc.</p>
+
+<input id = "press" placeholder="Pressione uma Tecla"><br><br>
+
+<button id="clique">Clique</button>
+<button id="duplo">Duplo Click</button>
+<button id="focu">Obter Focu</button>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	
+	$("#clique").blur(function(){
+		$("h1").css("border", "1px solid black");
+	})
+
+	$("#clique").click(function(){
+		alert("Foi clicado");
+	})
+
+	$("#duplo").dblclick(function(){
+		alert("Duplo Click");
+	})
+
+	$("h1").mouseover(function () {
+		$("#texto").css("background-color","red");
+	})
+	
+	$("h1").mouseout(function(){
+		$("#texto").css("background-color", "blue");
+	})
+
+	$("h1").mouseup(function(){
+		$("#texto").css("border","3px solid black");
+	})
+
+	$("h1").mousedown(function(){
+		$("#duplo").css("background-color", "yellow");
+	})
+
+	$("input").keypress(function(){
+		$("input").css("background-color", "pink")
+	})
+
+	$("input").keyup(function(){
+		$("input").css("background-color", "gray")
+	})
+
+	$("input").keydown(function(){
+		$("input").css("background-color", "yellow")
+	})
+
+
+	$("#focu").focus(function(){
+		alert("obteve Foco");
+	})
+
+
+	
+</script> 
+
+</body>
+</html>

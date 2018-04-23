@@ -1,0 +1,42 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercício</h1>
+
+			<div id="innerBox" style ="margin: 0px auto; width: 200px;">
+					<form>
+
+						<div style="margin-top: 20px; height: 20px;">
+							<span>checkbox1:</span><input id="cb1" type="checkbox"/>
+						</div>
+						<div style="margin-top: 20px; height: 20px;">
+							<span>checkbox2:</span><input id="cb2" type="checkbox" checked="checked"/>
+						</div>
+						<div style="margin-top: 20px; height: 20px;">
+							<span>checkbox3:</span><input id="cb3" type="checkbox" checked="checked"/>
+						</div>
+					</form>
+
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script>
+			//Manipulador attr, removeAttr - Use os métodos de manipulação para selecionar o elemento com id checkbox1, deselecionar o elemento com id checkbox2 e testar se o elemento com id checkbox3 esta selecionado, exibindo uma mensagem através de alerta em caso positivo.
+
+
+			$("#cb1").attr ("checked", "checked");
+			$("#cb2").removeAttr ("checked");
+
+			
+			if(cb3 = $("#cb3").attr("checked")){
+				alert("Positivo");
+			}
+
+
+		</script>
+
+
+	<body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercícios</h1>
+			<div id="innerBox" style ="margin: 0px auto; width: 200px;">
+
+			<input id="button" type="button" name = "ola" value="Click Aqui" style="margin-top: 20px;  width: 150px;"/>
+
+			<input id="button" type="button" name = "mesmo" value="Mais Coisas" style="margin-top: 20px;  width: 150px;"/>
+			<input id="button" type="button" name = "mesmo" value="Mais Coisas" style="margin-top: 20px;  width: 150px;"/>
+
+				<table  >
+					<tbody>
+						<tr>
+							<td>First Name</td>
+							<td>Last Name</td>
+							<td>Points</td>
+						</tr>
+						
+						<tr class="female">
+							<td>Jill</td>
+							<td>Smith</td>
+							<td>50</td>
+						</tr>
+						
+						<tr class="male">
+							<td>John</td>
+							<td>Doe</td>
+							<td>80</td>
+						</tr>
+						
+						<tr class="female">
+							<td>Eve</td>
+							<td>Jackson</td>
+							<td>94</td>
+						</tr>
+						
+						<tr class="male">
+							<td>Adam</td>
+							<td>Johnson</td>
+							<td>67</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<input id="button" type="button" name = "ola" value="Click Aqui" style="margin-top: 20px;  width: 150px;"/>
+		</div>
+
+  	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script>
+      		
+      		// 3 – aplique css utilizando todos os filtros de atributo visto em sala de aula  (=, !=, ^=, $=, *=)
+
+      		$("div[id]").css("background-color", "gray");
+
+      		$("input[name='ola']").css("color", "blue");
+
+      		$("input[name!='ola']").css("color","black");
+
+      		$("div[id^='box']").css("background-color", "blue");
+
+      		$("div[id$='innerBox']").css("border","1px solid yellow");
+
+      		$("input[name*='ola']").click(function () {
+      			alert("Você Clicou!!!");
+      		});
+
+
+      </script>
+
+	<body>
+</html>s

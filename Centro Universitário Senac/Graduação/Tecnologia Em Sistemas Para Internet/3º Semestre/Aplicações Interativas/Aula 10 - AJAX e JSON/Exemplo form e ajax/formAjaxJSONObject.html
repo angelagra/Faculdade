@@ -1,0 +1,53 @@
+<html>
+	<head>
+
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+			<form>
+				<select id="estado">
+					<option value="AC">Acre</option>
+					<option value="BA">Bahia</option>
+					<option value="SP">São Paulo</option>				
+				</select>
+				
+				<select id="cidade">
+
+				</select>
+					
+				
+				
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+		
+		$("#estado").change ( function () {
+			var estado = $("#estado option:selected").val ();
+			$.ajax ("getCidadesJSONObject.php?estado="+estado)
+				.done (function (data) {
+				
+					$("#cidade").empty ();
+					var array = $.parseJSON (data);
+					for (var i=0; i< array.length; i++) {
+						$("#cidade").append ("<option>"+array[i].nome+"</option>");
+					}
+					
+				
+				})
+		})
+
+
+
+
+
+
+
+
+	</script>
+	<body>
+</html>

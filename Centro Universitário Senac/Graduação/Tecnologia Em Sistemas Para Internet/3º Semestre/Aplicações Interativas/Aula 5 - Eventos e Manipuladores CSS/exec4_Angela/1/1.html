@@ -1,0 +1,52 @@
+<html>
+	<head>
+
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+			<div id="tab" style="margin-top: 20px;">
+
+			</div>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+		//SEU CODIGO DE CRIACAO DOS ELEMENTOS DO TABS AQUI... DEPOIS, DESCOMENTE O CODIGO QUE DA O COMPORTAMENTO AO TABS
+
+		
+		$("#tab").append('<div style="clear: both;"> </div>');
+		$("#tab").append('<div id="tabContent" style="width: 200px; border: 1px solid darkgreen; height: 200px;">');
+		$("#tab").prepend('<div id="tabControl" style="width: 200px; border: 1px solid darkgreen; height: 25px;">');
+
+		//before será o primeiro. No canto do tabControl vou colocar o tabButton1 a mesma coisa com o tabContent será posto o tabContent1
+		$("#tabControl").before('<div id="tabButton1" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx1 selecionado">tab 1</div>');
+		$("#tabContent").before('<div id="tabContent1" style="width: 200px; height: 50px; border: 1px solid red; display: block;" class="tabContent tContentIdx1">conteudo tab1</div>');
+
+		//after sempre ficara do lado daquele que voce quiser colocar. do lado do tabButton1 vou colocar o tabButton2, do lado do tabContent1 vai se posto o tabContent2
+		$("#tabButton1").after('<div id="tabButton2" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx2">tab 2</div>');
+		$("#tabContent1").after('<div id="tabContent2" style="width: 200px; height: 50px;  border: 1px solid green; display: none;" class="tabContent tContentIdx2" >conteudo tab2</div>');
+
+
+		$("#tabButton2").after('<div id="tabButton3" style="width: 50px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" class="tabButton Idx3">tab 3</div>');
+		$("#tabContent2").after('<div id="tabContent3" style="width: 200px; height: 50px; border: 1px solid blue; display: none;" class="tabContent tContentIdx3">conteudo tab3</div>');
+
+
+		$(".tabContent").css("display","none");
+		$(".tContentIdx1").css("display","block");
+
+		$(".tabButton").click ( function () {
+				$(".tabButton").removeClass ("selecionado");
+				var idx = $(this).attr ("class").replace ("tabButton","").trim();
+				$(".tabContent").css ("display","none");
+
+				$(".tContent"+idx).css ("display","block");
+				$(this).addClass ("selecionado");
+
+		});
+
+
+	</script>
+	<body>
+</html>

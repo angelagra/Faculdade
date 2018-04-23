@@ -1,0 +1,144 @@
+<html>
+	<head>
+
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+			<div id="tab" style="margin-top: 20px;">
+					<div style="width: 550px; border: 1px solid darkgreen; height: 25px;">
+						<div id="b1" style="width: 100px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+							Shih-tzu
+						</div>
+						<div id="b2" style="width: 100px; height: 25px; border: 1px solid black; float: left; cursor: pointer;" >
+							Pastor Alemão
+						</div>
+						<div id="b3" style="width: 100px; height: 25px; border: 1px solid black; float: left; cursor: pointer;">
+							Labrador
+						</div>
+					</div>
+					<div style="clear: both;"> </div>
+					<div style="width: 550px; border: 1px solid darkgreen; height: 400px;"> 
+						<div id="c1" style="width: 540px; height: 390px; border: 1px solid red; display: block;">
+						
+						</div>
+						<div id="c2" style="width: 540px; height: 390px;  border: 1px solid green; display: none;"  >
+						
+						</div>
+						<div id="c3" style="width: 540px; height: 390px; border: 1px solid blue; display: none;" >
+						
+						</div>
+					</div>
+				</div>
+				<button id="jsonp">jsonp</button>
+				
+				
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+	
+		
+		
+		$("#jsonp").click (function (){
+			$.ajax ("http://estudofabio.appspot.com/jsonp", { dataType: "jsonp" }).done (function (data){
+				alert (data);
+			
+			}
+);
+		});
+		
+	/*
+		$.ajax ("http://estudofabio.appspot.com/jsonp").done (function (data) {
+			alert (data);
+		
+		});*/
+
+		$("#b2").click (function () {
+			$.ajax ("getDogJson.php?idDog=pastorAlemao")
+				.done ( function (data) {
+					$("#c2").empty ();
+					var conteudo = jQuery.parseJSON (data);						
+					$("#c2").append ("<img style='width: 150' src='"+conteudo.imagem+"'>");
+					$("#c2").append ("<p>"+conteudo.texto+"</p>");
+
+					
+				} )
+				
+		
+			$("#c1, #c3").hide ();
+			$("#c2").show ();
+		
+		
+		})
+		
+		
+		$("#b1").click (function () {
+			$.ajax ("getDogJson.php?idDog=shengshui")
+				.done ( function (data) {
+					var conteudo = jQuery.parseJSON (data);						
+					$("#c1").empty ();
+					$("#c1").append ("<img style='width: 150' src='"+conteudo.imagem+"'>");
+					$("#c1").append ("<p>"+conteudo.texto+"</p>");
+
+				} )
+				
+		
+			$("#c2, #c3").hide ();
+			$("#c1").show ();
+		
+		
+		})
+		
+		$("#b3").click (function () {
+			$.ajax ("getDogJson.php?idDog=labrador")
+				.done ( function (data) {
+					var conteudo = jQuery.parseJSON (data);						
+					$("#c3").empty ();
+					$("#c3").append ("<img style='width: 150' src='"+conteudo.imagem+"'>");
+					$("#c3").append ("<p>"+conteudo.texto+"</p>");
+
+				} )
+				
+		
+			$("#c2, #c1").hide ();
+			$("#c3").show ();
+		
+		
+		})
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+	</script>
+	<body>
+</html>

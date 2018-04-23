@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<style>
+			.naoValidado {
+				background-color: red;	
+			}			
+		</style>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercício</h1>
+
+			<div id="innerBox" style ="margin: 0px auto; width: 300px;">
+					<form onSubmit="return validaForm ();">
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >nome:</span>
+							<input id="name" type="text" class="input aindaNaoValidado name"/>							
+						</div>
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >endereço:</span>
+							<input id="address" type="text" class="input aindaNaoValidado endereco"/>							
+						</div>
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >estado:</span>
+							<select name="estado" >
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espírito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RN">Rio Grando do Norte</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+							</select>
+						</div>
+						
+						<div style="margin-top: 20px; height: 20px;">							
+							<span >email:</span><input id="email" type="text"/>							
+						</div>
+						<div style="margin-top: 20px; height: 20px;">
+							<span>pass:</span><input id="pass" type="password"/>
+						</div>
+						<div style="margin-top: 20px; height: 40px;">
+							<span>CPF na nota fiscal?:</span><input type="checkbox" id="cpfNaNota"/><input id="cpf" type="text" disabled="disabled"/>
+						</div>
+						<div style="margin-top: 20px; height: 40px;">
+							<span>pagamento:</span>
+								<input type="radio" name="paymentType" value="avista"/><span>a vista</span>
+								<input type="radio" name="paymentType" value="2x"/><span>2x</span>
+								<input type="radio" name="paymentType" value="3x"/><span>3x</span>
+						</div>
+
+						<div style="margin-top: 20px; height: 20px;">
+							<input type="submit" id="submit" value="pagar"/>
+						</div>
+					</form>
+
+			</div>
+		</div>
+
+
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script>
+      		//SEU CODIGO AQUI
+			
+			
+			$("#cpfNaNota").click (function () {
+				
+			
+				var valor = $("#cpfNaNota:checked").val ();
+				if (valor == undefined) {
+					$("#cpf").attr ("disabled","disabled");
+				} else {
+					$("#cpf").removeAttr ("disabled");
+				}
+				console.log (valor);
+			
+			})
+			
+			$(":submit").click (function () {
+				
+				var tipoPagamento = $("input[name='paymentType']:checked").val ();
+				alert (tipoPagamento);
+				var estado = $("select option:selected").val ();
+				alert (estado);
+				
+				var retorno = true;
+								
+				var nome = $(":text[id='name']").val ();
+				if (nome == "") {
+					$(":text[id='name']").removeClass ("aindaNaoValidado").addClass ("naoValidado");
+					alert ("preencha o nome");
+					return false;
+				} else {
+					$(":text[id='name']").removeClass ("aindaNaoValidado").addClass ("validado");
+				}
+				
+				var address = $(":text[id='address']").val ();
+				if (address == "") {
+					alert ("preencha o endereco");
+					return false;
+				}
+				
+				var email = $(":text[id='email']").val ();
+				if (email == "") {
+					alert ("preencha o email");
+					return false;
+				}
+				
+				var password = $(":password").val ();
+				if (password == "") {
+					alert ("preencha o password");
+					return false;
+				}
+				
+				var cpf = $("#cpf:enabled").val ();
+				if (cpf != undefined && cpf == "") {
+					alert ("preencha o cpf");
+					return false;
+				}
+				
+				
+				
+				return retorno;
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			})
+      		
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+      </script>
+
+	<body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+
+
+	</head>
+	<body>
+		<input type="button" id="botao1" value="botao1"/>
+		<input type="button" id="botao2" value="botao2"/>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+
+//aplicar a função f1 e f2 no botão 1 e remover a função f2 do botão1 ao clicar no botão2. (uso de on e off)
+$("#botao1").on("click",function f1 (){
+
+	alert ('f1');
+})	
+
+$("#botao1").on("click",function f2 () {
+	alert ('f2');
+})
+
+$("#botao2").off("click", "#botao1", function f2(){
+
+})	
+
+
+	</script>
+	<body>
+</html>

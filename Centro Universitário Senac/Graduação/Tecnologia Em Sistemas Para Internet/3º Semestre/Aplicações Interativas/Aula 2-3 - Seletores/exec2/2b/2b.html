@@ -1,0 +1,104 @@
+<html>
+	<head>
+		 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<style>
+			.selecionado {
+				font-weight: bold;
+			}
+		</style>
+		<script>
+			//parte 3
+			var colors = new Array ();
+			colors[0]="darkred";
+			colors[1]="darkgreen";
+			colors[2]="darkblue";
+			var idx = 0;
+			function changeBorder () {
+				$("#textArea").css("border", "2px solid "+colors[idx]);
+				idx +=1;
+				if (idx == 3)
+					idx = 0;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box" style="width: 500px; height: 500px; border: 4px solid darkred; margin: 0px auto;">
+			<h1 id="title" style="width: 100%; text-align: center;">Exercícios</h1>
+
+			<div id="innerBox" style ="margin: 0px auto; width: 200px;">
+
+				<input id="button" type="button" value="Faz alguma coisa" style="margin-top: 20px;  width: 150px;"    />
+
+
+				<div id="divButton" style="margin-top: 20px; border: 1px solid black; cursor: pointer;" onclick="changeBorder ();" >
+					Faz alguma coisa também!
+				</div
+				<textarea id="textArea" style="margin-top: 20px; border: 2px solid darkblue; width: 150px; height: 50px;" >
+
+				</textarea>
+
+				<div id="tab" style="margin-top: 20px;">
+					<div id="tabControl" style="width: 200px; border: 1px solid darkgreen; height: 25px;">
+						<div id="tabButton1" style="width: 50px; height: 25px; border: 1px solid black; float: left; " class="tabButton Idx1">
+							tab 1
+						</div>
+						<div id="tabButton2" style="width: 50px; height: 25px; border: 1px solid black; float: left;" class="tabButton Idx2">
+							tab 2
+						</div>
+						<div id="tabButton3" style="width: 50px; height: 25px; border: 1px solid black; float: left;" class="tabButton Idx3">
+							tab 3
+						</div>
+					<div>
+					<div style="clear: both;"> </div>
+					<div id="tabContent" style="width: 200px; border: 1px solid darkgreen; height: 200px;">
+						<div id="tabContent1" style="width: 200px; height: 50px; border: 1px solid red;" class="tabContent tContentIdx1">
+							conteudo tab1
+						</div>
+						<div id="tabContent2" style="width: 200px; height: 50px;  border: 1px solid green;" class="tabContent tContentIdx2" >
+							conteudo tab2
+						</div>
+						<div id="tabContent3" style="width: 200px; height: 50px; border: 1px solid blue;" class="tabContent tContentIdx3">
+							conteudo tab3
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script>
+		//parte 1
+		$("#title").css("color","red").html ("Worked");
+
+		//parte 2
+		$("#button").mouseover(function () {
+				$(this).css("width","300px");
+		});
+
+		//parte 4
+		$(".tabContent").css("display","none");
+		$(".tContentIdx1").css("display","block");
+
+		//parte 5
+		$(".tabButton").click ( function () {
+
+				var idx = $(this).attr ("class").replace ("tabButton","").replace ("selecionado","").trim();
+				$(".tabContent:visible").slideUp ( function () {
+					$(".tContent"+idx).slideDown ();
+				} );
+
+
+				//parte 6
+				$(".tabButton").removeClass ("selecionado");
+				$(this).addClass ("selecionado");
+
+		});
+
+		//2a (html base livre) – exiba todos os elementos escondidos utilizando o filtro :hidden
+
+        //2b (use base 2b) – vocês lembram que quando adicionamos os efeitos de slideDown e slideUp no exemplo do Tabs, vimos um comportamento estranho na pagina? Isso acontecia porque estávamos “sumindo”, utilizando o efeito slideUp, todas as tabs do tab. Isso significa que inclusive as tabs que já estavam escondidas vão reaparecer só para serem animadas até desaparecer novamente. Arrume esse comportamento especificando que somente as tabs VISIVEIS sejam animadas com o slideUp.
+
+
+	</script>
+	<body>
+</html>
